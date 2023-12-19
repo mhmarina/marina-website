@@ -3,7 +3,7 @@ import "../App.css";
 function HomePage() {
   return (
     <div className="homepage">
-      <img className="avatar" src="src/assets/curlss.png" />
+      <img className="avatar" src="src\assets\curlss.png" />
       <div className="brief">
         <div
           style={{ fontSize: "24px", marginBottom: "5px", fontWeight: "bold" }}
