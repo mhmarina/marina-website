@@ -8,37 +8,37 @@ interface Project {
 
 const project1: Project = {
   title: "Bulk Upload Tool",
-  image: "src/assets/cover_image_1675885062.jpeg",
+  image: "src/assets/programmingAssets/cover_image_1675885062.jpeg",
   description:
-    "During The Summer of 2023, I was a software engineering intern at The Home Depot. During this time, I gain valuable experience working on theit internal Bulk Upload Tool. Over the course of this internship, I quickly learned and applied React.js. This tool will be used by hundreds of creatives within the company!",
+    "During The Summer of 2023, I was a software engineering intern at The Home Depot. During this time, I gained valuable experience working on their internal Bulk Upload Tool. Over the course of this internship, I quickly learned and applied React.js. This tool will be used by hundreds of creatives within the company!",
 };
 
 const project2: Project = {
   title: "MyCO2",
-  image: "src/assets/aws.png",
+  image: "src/assets/programmingAssets/aws.png",
   description:
-    "During my freshman year of college, as an Amazon Cloud Scholar I participated the AWS hackathon. Not only was this my first hackathon ever, it was my first ever introduction to coding. This experience introduced me to various cloud computing concepts and ignited an interest in computer science.",
+    "During my freshman year of college, as an Amazon Cloud Scholar I participated in the AWS hackathon. This was my first ever introduction to coding, and I hadn't written a line of code prior. This experience introduced me to various cloud computing concepts and ignited in me a serious interest in computer science.",
 };
 
 const project3: Project = {
   title: "Santa Slays",
-  image: "src/assets/end game illustration.png",
+  image: "src/assets/programmingAssets/end game illustration.png",
   description:
-    "One of the biggest motivations for entering the field of computer science is my interest in video games. In Winter of 2023, I participated in the Christmas Game Jam hosted by Blizzard and Unity. Over the course of 2 weeks, my team and I developed a first person shooter. This was an amazing experience and a great into to game development.",
+    "One of my biggest motivations for entering the field of computer science is my interest in video games. In Winter of 2023, I participated in the Christmas Game Jam hosted by Blizzard and Unity. Over the course of 2 weeks, my team and I developed a first person shooter. This was an amazing experience and a great intro to game development.",
 };
 
 const project4: Project = {
-  title: "EffortLogger",
-  image: "src/assets/resize.png",
+  title: "EffortLogger 2.0",
+  image: "src/assets/programmingAssets/resize.png",
   description:
-    "Working on this project taught me how to work with a group of engineers, as well as helped me brush up on my Java and JavaFX skills.",
+    "Working on this project taught me how to work with a group of engineers, as well as introduced me to SQL and helped me brush up on my Java and JavaFX knowledge.",
 };
 
 const project5: Project = {
   title: "Grace Hopper Conference 2022",
-  image: "src/assets/next-is-now.png",
+  image: "src/assets/programmingAssets/next-is-now.png",
   description:
-    "Attending the Grace Hopper Conference during my Sophomore year was one of the best experiences of my life. Not only did it introduce me to various fields in computer science, it helped me land my first internship and helped me get my foot in the door. Thank to GHC, I gained better insight into what I want to do with my future.",
+    "Attending the Grace Hopper Conference during my Sophomore year was one of the best experiences of my life. Not only did it introduce me to the various fields in computer science, it helped me land my first internship. Thanks to GHC, I gained better insight into what I wanted to do with my future.",
 };
 
 const projects: Project[] = [project1, project2, project3, project4, project5];

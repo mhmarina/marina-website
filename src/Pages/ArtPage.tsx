@@ -1,3 +1,5 @@
+import Gallery from "../Components/Gallery";
+
 const messages: string[] = [
   "not a lot going on at the moment.",
   "rawr :3",
@@ -8,8 +10,8 @@ const index = Math.floor(Math.random() * messages.length);
 
 function ArtPage() {
   return (
-    <div style={{ marginTop: "150px" }}>
-      <h1>{messages[index]}</h1>
+    <div style={{ marginTop: "135px" }}>
+      <Gallery />
     </div>
   );
 }

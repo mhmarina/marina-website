@@ -136,3 +136,18 @@
   font-weight: bold;
   font-size: 24px;
 }
+
+.galleryview{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+  img{
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    opacity: 0.5;
+  }
+  img:hover{
+    opacity: 1;
+  }
+}
