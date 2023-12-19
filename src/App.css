@@ -103,3 +103,36 @@
   font-family: Pixelmania;
   margin-right: auto; 
 }
+
+.programmingpage{
+  display:flex;
+  flex-direction: column;
+  margin-top:100px;
+}
+.projectcard{
+  background-color: #342c2f;
+  height: 250px;
+  margin: 25px;
+  margin-top: 0px;
+  padding: 12px;
+  min-width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img{
+    margin-left: auto; 
+    min-width: 40%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+.textarea{
+  padding: 25px;
+  color: white;
+}
+.textareatitle{
+  color:#cc7aa0;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 24px;
+}
