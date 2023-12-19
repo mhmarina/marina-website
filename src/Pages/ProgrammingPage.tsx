@@ -31,14 +31,14 @@ const project4: Project = {
   title: "EffortLogger",
   image: "src/assets/resize.png",
   description:
-    "Although most of the CSE360 course was a drag, working on this project taught me how to work with a group of engineers, as well as helped me brush up on my Java and JavaFX skills.",
+    "Working on this project taught me how to work with a group of engineers, as well as helped me brush up on my Java and JavaFX skills.",
 };
 
 const project5: Project = {
   title: "Grace Hopper Conference 2022",
   image: "src/assets/next-is-now.png",
   description:
-    "Being awarded the GHC2022 scholarship during my Sophomore year was one of the best experiences of my life. Not only did it introduce me to various fields in computer science, it helped me land my first internship and helped me get my foot in the door. Thank to GHC, I gained better insight into what I want to do with my future.",
+    "Attending the Grace Hopper Conference during my Sophomore year was one of the best experiences of my life. Not only did it introduce me to various fields in computer science, it helped me land my first internship and helped me get my foot in the door. Thank to GHC, I gained better insight into what I want to do with my future.",
 };
 
 const projects: Project[] = [project1, project2, project3, project4, project5];
