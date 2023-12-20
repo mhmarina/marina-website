@@ -1,4 +1,4 @@
-const _URL_ = "../";
+const _URL_ = "assets/artAssets/";
 let images = [
   "bluelight.png",
   "breathtaking.png",
