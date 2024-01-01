@@ -23,6 +23,7 @@ import miafey from "../assets/artAssets/miafeyy.png";
 import starfire from "../assets/artAssets/starfire light.png";
 import wings from "../assets/artAssets/wings.png";
 import painting from "../assets/artAssets/painting.jpg";
+import "../App.css";
 
 let images = [
   painting,

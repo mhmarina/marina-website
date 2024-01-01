@@ -4,6 +4,7 @@ import AWS from "../assets/programmingAssets/aws.png";
 import santa from "../assets/programmingAssets/end game illustration.png";
 import effort from "../assets/programmingAssets/resize.png";
 import GHC from "../assets/programmingAssets/next-is-now.png";
+import "../App.css";
 
 interface Project {
   title: string;

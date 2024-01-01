@@ -1,4 +1,5 @@
 import Gallery from "../Components/Gallery";
+import "../App.css";
 
 function ArtPage() {
   return (
