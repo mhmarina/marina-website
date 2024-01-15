@@ -10,6 +10,7 @@ import ProgrammingPage from "../Pages/ProgrammingPage";
 import "../App.css";
 import { useEffect, useState } from "react";
 import HomePage from "../Pages/HomePage";
+import { supabase } from "../SupabaseClient";
 
 function NavBar() {
   const headers = [
@@ -29,8 +30,56 @@ function NavBar() {
   const [numHits, setNumHits] = useState(0);
   const [header, setHeader] = useState(headers[randomIndex]); //on load
 
+  //fetch number of clicks on first render
+  async function fetchHits() {
+    try {
+      const { data, error } = await supabase
+        .from("hits")
+        .select("num_hits")
+        .eq("id", 1);
+
+      if (error) {
+        console.log("ERROR FETCHING HITS");
+        setNumHits(0);
+      } else {
+        const initHits = data ? Number(data[0].num_hits) : -1;
+        setNumHits(initHits);
+        console.log("number of hits on first render: " + initHits);
+      }
+    } catch (error) {
+      console.error("An error occurred while fetching hits:", error);
+      setNumHits(0);
+    }
+  }
+
+  useEffect(() => {
+    fetchHits();
+  }, []);
+
+  async function updateHits(newNumHits: number) {
+    try {
+      const { data, error } = await supabase
+        .from("hits")
+        .update({ num_hits: newNumHits })
+        .eq("id", 1)
+        .select();
+      if (error) {
+        console.error("Error updating hits:", error);
+      } else {
+        console.log("Hits updated successfully:", data[0]);
+      }
+    } catch (error) {
+      console.log("An error occured while updating hits: ", error);
+    }
+  }
+
   function onHitClick() {
-    setNumHits((numHits) => numHits + 1); //store total number in a database so it persists after refreshing
+    setNumHits((prevNumHits) => {
+      const newNumHits = prevNumHits + 1;
+      updateHits(newNumHits);
+      console.log(newNumHits);
+      return newNumHits;
+    }); //store total number in a database so it persists after refreshing
   }
 
   useEffect(() => {
@@ -39,7 +88,7 @@ function NavBar() {
       do {
         newIndex = Math.floor(Math.random() * headers.length);
       } while (newIndex === randomIndex);
-      setHeader(headers[randomIndex]);
+      setHeader(headers[newIndex]);
     }
   }, [numHits]); //only update again after mounting if numhits is divisible by 5
 
@@ -52,8 +101,8 @@ function NavBar() {
               {header}
               <br />
               <div style={{ fontFamily: "monospace", fontSize: "10px" }}>
-                <button onClick={() => onHitClick()}>hit me!</button>hits:{" "}
-                {numHits}
+                <button onClick={() => onHitClick()}>hit me!</button>hits:
+                {Number(numHits)}
               </div>
             </div>
             <NavLink to="/">Home</NavLink>
