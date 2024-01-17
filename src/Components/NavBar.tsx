@@ -60,7 +60,10 @@ function NavBar() {
     try {
       const { data, error } = await supabase
         .from("hits")
-        .update({ num_hits: newNumHits })
+        .update({
+          num_hits: newNumHits,
+          last_updated: new Date().toISOString(),
+        })
         .eq("id", 1)
         .select();
       if (error) {
