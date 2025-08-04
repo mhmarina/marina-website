@@ -1,5 +1,5 @@
 import "../App.css";
-import curls from "../assets/curlss.png";
+import curls from "../assets/curlss.webp";
 
 function HomePage() {
   return (

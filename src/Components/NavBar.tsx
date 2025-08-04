@@ -12,9 +12,7 @@ import { useEffect, useState } from "react";
 import HomePage from "../Pages/HomePage";
 import { supabase } from "../SupabaseClient";
 
-
 const hitsFile = "src/increment.txt"
-let fs = require('fs')
 
 function NavBar() {
   const headers = [
@@ -104,7 +102,7 @@ function NavBar() {
     hits = hits + 1
     setNumHits(hits)
     // write to file:
-    fs.write(hitsFile, hits.toString())
+    //fs.write(hitsFile, hits.toString())
   }
 
   useEffect(() => {
