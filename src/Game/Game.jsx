@@ -15,7 +15,7 @@ export function Game(){
     useEffect(() => {
         const handleKeyDown = (event) => {
             // restart game
-            if(event.key == "n" && isGameOver){
+            if(event.key == " " && isGameOver){
                 gameStart()
             }
         }
@@ -80,7 +80,7 @@ export function Game(){
                     {isGameOver && 
                     <div id="game-over-overlay">
                         <h2>Game Over! Score: {score}</h2>
-                        <h6>Press "n" to start over</h6>
+                        {/* <h6>Press "n" to start over</h6> */}
                     </div>}
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
                     <Player ref={playerRef} isGameOver={isGameOver}></Player>
