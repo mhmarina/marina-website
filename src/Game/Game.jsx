@@ -15,7 +15,7 @@ export function Game(){
     useEffect(() => {
         const handleKeyDown = (event) => {
             // restart game
-            if(event.key == "n" && isGameOver){
+            if(event.key == " " && isGameOver){
                 gameStart()
             }
         }
@@ -35,7 +35,6 @@ export function Game(){
         setTimeout(gameLoop, 10)
     }
     useEffect(() => gameLoop(), [])
-
     function gameOver(){
         isGameOverRef.current = true;
         setIsGameOver(true);
@@ -52,8 +51,10 @@ export function Game(){
            && rectA.y < rectB.y + rectB.height && rectA.y + rectA.height > rectB.y
     }
     function updateScore(blockRef){
-        const blockBounds = blockRef.current.getBoundingClientRect();
-        if(blockBounds.x <= 20){
+        const blockX = blockRef.current.getBoundingClientRect().x;
+        const containerX = blockRef.current.parentElement.getBoundingClientRect().x;
+        const relativeX = blockX - containerX;
+        if(relativeX <= 20){
             if(!hasScoredRef.current){
                 setScore(prev => prev + 1)
                 hasScoredRef.current = true;
@@ -64,14 +65,32 @@ export function Game(){
         }
     }
 
+    // handlers
+    function onSwitchSprite(src){
+        playerRef.current.src = src
+    }
+
     return(
         <div id="game-container">
-            Score: {score}
-            <div id="game"
-                className={isGameOver ? "game-over" : "game-start"}
-            >
-                <Block ref={blockRef} isGameOver={isGameOver}></Block>
-                <Player ref={playerRef} isGameOver={isGameOver}></Player>
+            <div>
+                Score: {score}
+                <div id="game"
+                    className={isGameOver ? "game-over" : "game-start"}
+                >
+                    {isGameOver && 
+                    <div id="game-over-overlay">
+                        <h2>Game Over! Score: {score}</h2>
+                        {/* <h6>Press "n" to start over</h6> */}
+                    </div>}
+                    <Block ref={blockRef} isGameOver={isGameOver}></Block>
+                    <Player ref={playerRef} isGameOver={isGameOver}></Player>
+                </div>
+                <button onClick={() => onSwitchSprite("https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled")}>
+                    Shrek
+                </button>
+                <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
+                    Dino
+                </button>
             </div>
         </div>
     )

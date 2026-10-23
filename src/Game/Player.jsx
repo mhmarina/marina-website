@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef } from "react"
+import dino from "./assets/dino.png"
 
 export function Player(props){
     const [isAnimated, setIsAnimated] = useState(false)
     const isGameOverRef = useRef(props.isGameOver);
-      const timeoutRef = useRef(null);
+    const timeoutRef = useRef(null);
 
     useEffect(() => {
         // Keep the ref in sync with the latest prop
@@ -36,14 +37,16 @@ export function Player(props){
     }, [isAnimated])
 
     return(
+        // shrek
         // <img id="player" className={isAnimated ? "animated-player" : ""} src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></img>
 
-        <div 
+        <img 
             id="player"
             // add/remove class based on state
             className={isAnimated ? "animated-player" : ""}
             ref={props.ref}
+            src={dino}
         >
-        </div>
+        </img>
     )
 }
