@@ -6,6 +6,7 @@ import "./styles/game.css"
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
     const [score, setScore] = useState(0)
+    const [highscore, setHighScore] = useState(0)
 
     const blockRef = useRef()
     const playerRef = useRef()
@@ -36,12 +37,17 @@ export function Game(){
     }
     useEffect(() => gameLoop(), [])
     function gameOver(){
-        isGameOverRef.current = true;
-        setIsGameOver(true);
+        if(!isGameOverRef.current){
+            isGameOverRef.current = true;
+            setIsGameOver(true);
+        }
     }
     function gameStart(){
         isGameOverRef.current = false;
         setIsGameOver(false);
+        if(score >= highscore){
+            setHighScore(score);
+        }
         setScore(0);
     }
     function checkCollision(refA, refB){
@@ -74,14 +80,16 @@ export function Game(){
     return(
         <div id="game-container">
             <div>
-                Score: {score}
+                <div id="headline">
+                    <h4>Score: {score}</h4>
+                    <h4>Hight Score: {highscore}</h4>
+                </div>
                 <div id="game"
                     className={isGameOver ? "game-over" : "game-start"}
                 >
                     {isGameOver && 
                     <div id="game-over-overlay">
                         <h2>Game Over! Score: {score}</h2>
-                        {/* <h6>Press "n" to start over</h6> */}
                     </div>}
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
                     <Player ref={playerRef} isGameOver={isGameOver}></Player>
@@ -92,6 +100,9 @@ export function Game(){
                 <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
                     Dino
                 </button>
+                <button onClick={() => onSwitchSprite("https://www.pngmart.com/files/24/Tung-Tung-Tung-Sahur-PNG-Photos.png")}>
+                    Tung Tung Sahur
+                </button> {/* maybe button should be a component */}
             </div>
         </div>
     )

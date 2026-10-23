@@ -7,6 +7,11 @@
     place-items: center;
     font-family: Minecraft;
 }
+#headline{
+    * {
+        margin: 0
+    };
+}
 #game{
     width: 500px;
     height: 200px;
