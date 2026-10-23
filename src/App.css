@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Pixelmania';
-  src: local('Pixelmania'), url('src\assets\fonts\Pixelmania.ttf') format('ttf');
+  src: local('Pixelmania'), url('./assets/fonts/Pixelmania.ttf') format('truetype');
 }
 
 ::-webkit-scrollbar {
