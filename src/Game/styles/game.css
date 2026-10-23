@@ -13,6 +13,7 @@
 
 #player{
     width: 20px;
+    /* width: auto; */
     height: 50px;
     background-color: green;
     position: absolute;

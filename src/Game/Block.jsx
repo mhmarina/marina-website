@@ -29,6 +29,7 @@ export function Block(props){
 
     return(
         <div id="block"
+            ref={props.ref}
             className={isAnimated ? "animated-block" : ""}
         ></div>
     )
