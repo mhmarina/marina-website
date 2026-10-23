@@ -4,6 +4,7 @@ export function Block(props){
     const [isAnimated, setIsAnimated] = useState(true)
     const [animationState, setAnimationState] = useState(-1)
     const prevIsGameOver = useRef(props.isGameOver)
+    const blockRef = useRef()
 
     useEffect(() => {
         prevIsGameOver.current = props.isGameOver
@@ -27,8 +28,17 @@ export function Block(props){
         }
     }, [animationState, props.isGameOver])
 
+    useEffect(()=> {
+        console.log("hello world")
+        if(blockRef.current){
+            const boundingBox = blockRef.current.getBoundingClientRect();
+            console.log(`left: ${boundingBox.left}, top: ${boundingBox.top}`)
+            console.log(blockRef.current)
+        }
+    })
+
     return(
-        <div id="block"
+        <div ref={blockRef} id="block"
             className={isAnimated ? "animated-block" : ""}
         ></div>
     )

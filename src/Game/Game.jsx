@@ -22,6 +22,10 @@ export function Game(){
         }
     }, [isGameOver]) //isGameOver is a dependency -- setState "schedules" the change for NEXT render
 
+    // add condition for gameOver
+    // if block pos.x <= player.width && !player.isAnimated
+    // maybe find out how to use refs to get this property!
+
     return(
         <div id="game-container">
             Score
