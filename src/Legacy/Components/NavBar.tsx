@@ -5,12 +5,12 @@ import {
   Routes,
   NavLink,
 } from "react-router-dom";
-import ArtPage from "../Pages/ArtPage";
-import ProgrammingPage from "../Pages/ProgrammingPage";
-import "../App.css";
+import ArtPage from "./../Pages/ArtPage";
+import ProgrammingPage from "./../Pages/ProgrammingPage";
+import "../styles/App.css";
 import { useEffect, useState } from "react";
-import HomePage from "../Pages/HomePage";
-import { supabase } from "../SupabaseClient";
+import HomePage from "./../Pages/HomePage";
+import { supabase } from "./../SupabaseClient";
 
 const hitsFile = "src/increment.txt"
 

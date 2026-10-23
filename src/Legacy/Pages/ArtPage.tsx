@@ -1,5 +1,5 @@
 import Gallery from "../Components/Gallery";
-import "../App.css";
+import "../styles/App.css";
 
 function ArtPage() {
   return (

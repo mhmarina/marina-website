@@ -1,10 +1,10 @@
 import ProjectCard from "../Components/ProjectCard";
-import BUT from "../assets/programmingAssets/cover_image_1675885062.webp";
-import AWS from "../assets/programmingAssets/aws.webp";
-import santa from "../assets/programmingAssets/end game illustration.webp";
-import effort from "../assets/programmingAssets/resize.webp";
-import GHC from "../assets/programmingAssets/next-is-now.webp";
-import "../App.css";
+import BUT from "../../assets/programmingAssets/cover_image_1675885062.webp";
+import AWS from "../../assets/programmingAssets/aws.webp";
+import santa from "../../assets/programmingAssets/end game illustration.webp";
+import effort from "../../assets/programmingAssets/resize.webp";
+import GHC from "../../assets/programmingAssets/next-is-now.webp";
+import "../styles/App.css";
 
 interface Project {
   title: string;
