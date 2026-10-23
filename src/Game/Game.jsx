@@ -70,10 +70,16 @@ export function Game(){
 
     return(
         <div id="game-container">
-            {!isGameOver && `Score: ${score}`}
+            Score: {score}
             <div id="game"
                 className={isGameOver ? "game-over" : "game-start"}
             >
+                {isGameOver && 
+                <div className="game-over-overlay"
+                    style={{position: "absolute", display: "flex", alignItems: "center", justifyContent: "center", inset: 0, flexDirection: "column"}}>
+                    <h2 style={{ margin: 0}}>Game Over! Score: {score}</h2>
+                    <h6 style={{ margin: 0}}>Press "n" to start over</h6>
+                </div>}
                 <Block ref={blockRef} isGameOver={isGameOver}></Block>
                 <Player ref={playerRef} isGameOver={isGameOver}></Player>
             </div>
