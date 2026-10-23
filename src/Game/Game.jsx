@@ -51,10 +51,11 @@ export function Game(){
            && rectA.y < rectB.y + rectB.height && rectA.y + rectA.height > rectB.y
     }
     function updateScore(blockRef){
-        const blockX = blockRef.current.getBoundingClientRect().x;
+        const blockBounds = blockRef.current.getBoundingClientRect()
+        const blockX = blockBounds.x;
         const containerX = blockRef.current.parentElement.getBoundingClientRect().x;
         const relativeX = blockX - containerX;
-        if(relativeX <= 20){
+        if(relativeX <= blockBounds.width){
             if(!hasScoredRef.current){
                 setScore(prev => prev + 1)
                 hasScoredRef.current = true;

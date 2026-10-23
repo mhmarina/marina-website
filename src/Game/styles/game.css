@@ -10,7 +10,7 @@
 #game{
     width: 500px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid black;
     position: relative;
 }
 .game-over *{
@@ -54,7 +54,7 @@
     position: absolute;
     top: 180px;
     left: 480px;
-    background-color: red;
+    background-color: black;
 }
 .animated-block{
     animation: slide 1s linear infinite;
@@ -66,4 +66,9 @@
     to{
         left: 0px;
     }
+}
+button{
+    border: 2px solid black;
+    border-radius: 0;
+    margin: 2px 2px 0 0;
 }
