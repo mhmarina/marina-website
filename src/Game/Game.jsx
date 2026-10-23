@@ -5,17 +5,15 @@ import "./styles/game.css"
 
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false);
+    const [socre, setScore] = useState(0)
     const blockRef = useRef()
     const playerRef = useRef()
 
     useEffect(() => {
         const handleKeyDown = (event) => {
-            if(event.key == "n"){
-                // we cant do this vv because isGameOver is "cached" in this function
-                // since it's only "rendered" once (since it's in use effect)
-                // so we must use prev.
-                // setIsGameOver(!isGameOver);
-                setIsGameOver(prev => !prev);
+            // restart game
+            if(event.key == "n" && isGameOver){
+                gameStart()
             }
         }
         window.addEventListener("keydown", handleKeyDown);
@@ -25,16 +23,12 @@ export function Game(){
         }
     }, [isGameOver]) //isGameOver is a dependency -- setState "schedules" the change for NEXT render
 
-    // add condition for gameOver
-    // if block pos.x <= player.width && !player.isAnimated
-    // need to create a gameloop with a constant (hasCollided()) check.
-    // maybe the game loop uses a timeout to constant call itself
-    // function loop = checkCollision(); setTimeout(checkCollision(), 10)
-
+    // game loop!!
     function gameLoop(){
         if(checkCollision(blockRef, playerRef)){
-            setIsGameOver(true);
+            gameOver();
         }
+        // check if block made it thru
         setTimeout(gameLoop, 10)
     }
     useEffect(() => gameLoop(), [])
@@ -46,6 +40,16 @@ export function Game(){
     return rectA.x < rectB.x + rectB.width && rectA.x + rectA.width > rectB.x
            && rectA.y < rectB.y + rectB.height && rectA.y + rectA.height > rectB.y
     }
+
+    function gameOver(){
+        setIsGameOver(true);
+    }
+
+    function gameStart(){
+        setIsGameOver(false);
+        setScore(0);
+    }
+
     return(
         <div id="game-container">
             Score
