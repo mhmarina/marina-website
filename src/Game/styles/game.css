@@ -1,3 +1,7 @@
+#game-container{
+    display: grid;
+    place-items: center;
+}
 #game{
     width: 500px;
     height: 200px;
@@ -9,6 +13,17 @@
 }
 .game-start *{
     animation-play-state: running !important;
+}
+#game-over-overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    flex-direction: column;
+    *{
+        margin: 0;
+    }
 }
 
 #player{

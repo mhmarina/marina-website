@@ -70,25 +70,26 @@ export function Game(){
 
     return(
         <div id="game-container">
-            Score: {score}
-            <div id="game"
-                className={isGameOver ? "game-over" : "game-start"}
-            >
-                {isGameOver && 
-                <div className="game-over-overlay"
-                    style={{position: "absolute", display: "flex", alignItems: "center", justifyContent: "center", inset: 0, flexDirection: "column"}}>
-                    <h2 style={{ margin: 0}}>Game Over! Score: {score}</h2>
-                    <h6 style={{ margin: 0}}>Press "n" to start over</h6>
-                </div>}
-                <Block ref={blockRef} isGameOver={isGameOver}></Block>
-                <Player ref={playerRef} isGameOver={isGameOver}></Player>
+            <div>
+                Score: {score}
+                <div id="game"
+                    className={isGameOver ? "game-over" : "game-start"}
+                >
+                    {isGameOver && 
+                    <div id="game-over-overlay">
+                        <h2>Game Over! Score: {score}</h2>
+                        <h6>Press "n" to start over</h6>
+                    </div>}
+                    <Block ref={blockRef} isGameOver={isGameOver}></Block>
+                    <Player ref={playerRef} isGameOver={isGameOver}></Player>
+                </div>
+                <button onClick={() => onSwitchSprite("https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled")}>
+                    Shrek
+                </button>
+                <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
+                    Dino
+                </button>
             </div>
-            <button onClick={() => onSwitchSprite("https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled")}>
-                Shrek
-            </button>
-            <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
-                Dino
-            </button>
         </div>
     )
 }
