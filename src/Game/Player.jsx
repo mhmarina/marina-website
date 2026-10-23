@@ -36,13 +36,14 @@ export function Player(props){
     }, [isAnimated])
 
     return(
-        <img id="player" className={isAnimated ? "animated-player" : ""} src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></img>
+        // <img id="player" className={isAnimated ? "animated-player" : ""} src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"></img>
 
-        // <div 
-        //     id="player"
-        //     // add/remove class based on state
-        //     className={isAnimated ? "animated-player" : ""}
-        // >
-        // </div>
+        <div 
+            id="player"
+            // add/remove class based on state
+            className={isAnimated ? "animated-player" : ""}
+            ref={props.ref}
+        >
+        </div>
     )
 }

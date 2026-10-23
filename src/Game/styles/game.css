@@ -12,10 +12,10 @@
 }
 
 #player{
-    /* width: 20px; */
-    width: auto;
+    width: 20px;
+    /* width: auto; */
     height: 50px;
-    /* background-color: green; */
+    background-color: green;
     position: absolute;
     top: 150px;
     /* animation: jump 0.25s linear infinite; */

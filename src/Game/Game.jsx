@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { Block } from "./Block";
 import { Player } from "./Player";
 import "./styles/game.css"
 
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false);
+    const blockRef = useRef()
+    const playerRef = useRef()
+
     useEffect(() => {
         const handleKeyDown = (event) => {
             if(event.key == "n"){
@@ -24,16 +27,33 @@ export function Game(){
 
     // add condition for gameOver
     // if block pos.x <= player.width && !player.isAnimated
-    // maybe find out how to use refs to get this property!
+    // need to create a gameloop with a constant (hasCollided()) check.
+    // maybe the game loop uses a timeout to constant call itself
+    // function loop = checkCollision(); setTimeout(checkCollision(), 10)
 
+    function gameLoop(){
+        if(checkCollision(blockRef, playerRef)){
+            setIsGameOver(true);
+        }
+        setTimeout(gameLoop, 10)
+    }
+    useEffect(() => gameLoop(), [])
+
+    function checkCollision(refA, refB){
+        const rectA = refA.current.getBoundingClientRect();
+        const rectB = refB.current.getBoundingClientRect();
+        
+    return rectA.x < rectB.x + rectB.width && rectA.x + rectA.width > rectB.x
+           && rectA.y < rectB.y + rectB.height && rectA.y + rectA.height > rectB.y
+    }
     return(
         <div id="game-container">
             Score
             <div id="game"
                 className={isGameOver ? "game-over" : "game-start"}
             >
-                <Block isGameOver={isGameOver}></Block>
-                <Player isGameOver={isGameOver}></Player>
+                <Block ref={blockRef} isGameOver={isGameOver}></Block>
+                <Player ref={playerRef} isGameOver={isGameOver}></Player>
             </div>
         </div>
     )
