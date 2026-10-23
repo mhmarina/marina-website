@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Block } from "./Block";
 import { Player } from "./Player";
-import "../styles/game.css"
+import "./styles/game.css"
 
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false);
