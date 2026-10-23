@@ -35,7 +35,6 @@ export function Game(){
         setTimeout(gameLoop, 10)
     }
     useEffect(() => gameLoop(), [])
-
     function gameOver(){
         isGameOverRef.current = true;
         setIsGameOver(true);
@@ -64,15 +63,26 @@ export function Game(){
         }
     }
 
+    // handlers
+    function onSwitchSprite(src){
+        playerRef.current.src = src
+    }
+
     return(
         <div id="game-container">
-            Score: {score}
+            {!isGameOver && `Score: ${score}`}
             <div id="game"
                 className={isGameOver ? "game-over" : "game-start"}
             >
                 <Block ref={blockRef} isGameOver={isGameOver}></Block>
                 <Player ref={playerRef} isGameOver={isGameOver}></Player>
             </div>
+            <button onClick={() => onSwitchSprite("https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled")}>
+                Shrek
+            </button>
+            <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
+                Dino
+            </button>
         </div>
     )
 }
