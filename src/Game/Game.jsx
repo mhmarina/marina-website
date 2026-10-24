@@ -33,7 +33,7 @@ export function Game(){
         if(checkCollision(blockRef, playerRef)){
             gameOver();
         }
-        if(!isGameOverRef.current){updateScore(blockRef)}
+        if(!isGameOverRef.current){updateScore()}
         setTimeout(gameLoop, 10)
     }
     useEffect(() => gameLoop(), [])
@@ -57,13 +57,14 @@ export function Game(){
     return rectA.x < rectB.x + rectB.width && rectA.x + rectA.width > rectB.x
            && rectA.y < rectB.y + rectB.height && rectA.y + rectA.height > rectB.y
     }
-    function updateScore(blockRef){
+    function updateScore(){
         const blockBounds = blockRef.current.getBoundingClientRect()
         const blockX = blockBounds.x;
         const containerX = blockRef.current.parentElement.getBoundingClientRect().x;
         const relativeX = blockX - containerX;
-        if(relativeX <= blockBounds.width){
+        if(relativeX <= blockBounds.width/2){
             if(!hasScoredRef.current){
+                randomizeBlockHeight()
                 setScore(prev => prev + 1)
                 hasScoredRef.current = true;
             }
@@ -72,7 +73,12 @@ export function Game(){
             hasScoredRef.current = false;
         }
     }
-
+    // randomize blocks
+    function randomizeBlockHeight(){
+        const height = Math.random() * (35 - 20) + 20;
+        blockRef.current.style.height = `${height}px`;
+        blockRef.current.style.top = `${200-height}px`;
+    }
     // handlers
     function onSwitchSprite(src){
         playerRef.current.src = src
