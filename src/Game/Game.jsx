@@ -2,11 +2,12 @@ import { useEffect, useState, useRef } from "react"
 import { Block } from "./Block";
 import { Player } from "./Player";
 import "./styles/game.css"
+import { useLocalStorage } from "../Hooks/UseLocalStorage";
 
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
     const [score, setScore] = useState(0)
-    const [highscore, setHighScore] = useState(0)
+    const {value: highscore, setValue: setHighScore, error: highscoreError} = useLocalStorage("high-score", 0)
 
     const blockRef = useRef()
     const playerRef = useRef()
@@ -44,10 +45,10 @@ export function Game(){
     }
     function gameStart(){
         isGameOverRef.current = false;
-        setIsGameOver(false);
         if(score >= highscore){
             setHighScore(score);
         }
+        setIsGameOver(false);
         setScore(0);
     }
     function checkCollision(refA, refB){
