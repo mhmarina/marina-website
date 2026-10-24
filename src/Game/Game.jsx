@@ -3,6 +3,9 @@ import { Block } from "./Block";
 import { Player } from "./Player";
 import "./styles/game.css"
 import { useLocalStorage } from "../Hooks/UseLocalStorage";
+import dino from '../assets/game/dino.png'; 
+import shrek from '../assets/game/shrek.png'; 
+import tungtung from '../assets/game/tungtung.png'; 
 
 export function Game(){
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
@@ -101,13 +104,13 @@ export function Game(){
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
                     <Player ref={playerRef} isGameOver={isGameOver}></Player>
                 </div>
-                <button onClick={() => onSwitchSprite("./src/Game/assets/shrek.png")}>
+                <button onClick={() => onSwitchSprite(shrek)}>
                     Shrek
                 </button>
-                <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
+                <button onClick={() => onSwitchSprite(dino)}>
                     Dino
                 </button>
-                <button onClick={() => onSwitchSprite("./src/Game/assets/tungtung.png")}>
+                <button onClick={() => onSwitchSprite(tungtung)}>
                     Tung Tung Sahur
                 </button> {/* maybe button should be a component */}
             </div>

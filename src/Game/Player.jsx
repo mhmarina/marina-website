@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react"
-import dino from "./assets/dino.png"
+import dino from "../assets/game/dino.png"
 
 export function Player(props){
     const [isAnimated, setIsAnimated] = useState(false)
