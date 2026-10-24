@@ -95,13 +95,13 @@ export function Game(){
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
                     <Player ref={playerRef} isGameOver={isGameOver}></Player>
                 </div>
-                <button onClick={() => onSwitchSprite("https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled")}>
+                <button onClick={() => onSwitchSprite("./src/Game/assets/shrek.png")}>
                     Shrek
                 </button>
                 <button onClick={() => onSwitchSprite("./src/Game/assets/dino.png")}>
                     Dino
                 </button>
-                <button onClick={() => onSwitchSprite("https://www.pngmart.com/files/24/Tung-Tung-Tung-Sahur-PNG-Photos.png")}>
+                <button onClick={() => onSwitchSprite("./src/Game/assets/tungtung.png")}>
                     Tung Tung Sahur
                 </button> {/* maybe button should be a component */}
             </div>
