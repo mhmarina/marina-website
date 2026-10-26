@@ -11,6 +11,7 @@ export function Game(){
     const [round, setRound] = useState(0); // Use to track rounds as well as key to remount/reset component
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
     const [score, setScore] = useState(0)
+    const [isNewHighScore, setIsNewHighScore] = useState(false)
     const {value: highscore, setValue: setHighScore} = useLocalStorage("high-score", 0)
 
     const blockRef = useRef()
@@ -19,6 +20,10 @@ export function Game(){
     const hasScoredRef = useRef(false); // constant to track scoring
 
     useEffect(() => {
+        if(score > highscore && isGameOver){
+            setHighScore(score);
+            setIsNewHighScore(true)
+        }
         const handleKeyDown = (event) => {
             // restart game
             if(event.key == " " && isGameOver){
@@ -27,32 +32,32 @@ export function Game(){
             }
         }
         window.addEventListener("keydown", handleKeyDown);
+
+        let gameloopTimeout;
+        // gameloop!!
+        const gameLoop = () => {
+            if(checkCollision(blockRef, playerRef)){
+                gameOver();
+            }
+            if(!isGameOverRef.current){updateScore()}
+            gameloopTimeout = setTimeout(gameLoop, 10)
+        }
+        gameLoop();
+        
         // cleanup function
         return() => {
+            clearTimeout(gameloopTimeout)
             window.removeEventListener("keydown", handleKeyDown)
         }
     }, [isGameOver]) //isGameOver is a dependency -- setState "schedules" the change for NEXT render
 
-    // game loop!!
-    function gameLoop(){
-        if(checkCollision(blockRef, playerRef)){
-            gameOver();
-        }
-        if(!isGameOverRef.current){updateScore()}
-        setTimeout(gameLoop, 10)
-    }
-    useEffect(() => gameLoop(), [])
     function gameOver(){
-        if(!isGameOverRef.current){
-            isGameOverRef.current = true;
-            setIsGameOver(true);
-        }
+        isGameOverRef.current = true;
+        setIsGameOver(true);
     }
     function gameStart(){
         isGameOverRef.current = false;
-        if(score >= highscore){
-            setHighScore(score);
-        }
+        setIsNewHighScore(false);
         setIsGameOver(false);
         setScore(0);
     }
@@ -104,6 +109,7 @@ export function Game(){
                     {isGameOver && 
                     <div id="game-over-overlay">
                         <h2>Game Over! Score: {score}</h2>
+                        {isNewHighScore && <h2>NEW HIGH SCORE!</h2>}
                     </div>}
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
                     <Player ref={playerRef} isGameOver={isGameOver}></Player>
