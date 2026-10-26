@@ -8,9 +8,10 @@ import shrek from '../assets/game/shrek.png';
 import tungtung from '../assets/game/tungtung.png'; 
 
 export function Game(){
+    const [round, setRound] = useState(0); // Use to track rounds as well as key to remount/reset component
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
     const [score, setScore] = useState(0)
-    const {value: highscore, setValue: setHighScore, error: highscoreError} = useLocalStorage("high-score", 0)
+    const {value: highscore, setValue: setHighScore} = useLocalStorage("high-score", 0)
 
     const blockRef = useRef()
     const playerRef = useRef()
@@ -22,6 +23,7 @@ export function Game(){
             // restart game
             if(event.key == " " && isGameOver){
                 gameStart()
+                setRound(prev => prev+1)
             }
         }
         window.addEventListener("keydown", handleKeyDown);
@@ -55,6 +57,7 @@ export function Game(){
         setScore(0);
     }
     function checkCollision(refA, refB){
+        if(!refA || !refB){return;}
         const rectA = refA.current.getBoundingClientRect();
         const rectB = refB.current.getBoundingClientRect();
     return rectA.x < rectB.x + rectB.width && rectA.x + rectA.width > rectB.x
@@ -88,11 +91,12 @@ export function Game(){
     }
 
     return(
-        <div id="game-container">
+        <div id="game-container" key={round}>
             <div>
                 <div id="headline">
                     <h4>Score: {score}</h4>
-                    <h4>Hight Score: {highscore}</h4>
+                    <h4>High Score: {highscore}</h4>
+                    <h4>Round: {round}</h4>
                 </div>
                 <div id="game"
                     className={isGameOver ? "game-over" : "game-start"}
