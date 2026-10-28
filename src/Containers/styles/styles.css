@@ -1,4 +1,13 @@
-.grid-container{
+.grid-container {
+    --gap: 30px;
+    --cell-min: 250px;
+    --cell-max: 300px;
+    --max-cols: 3;
+
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto,500px));
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--cell-min)), var(--cell-max)));
+
+    /* max-cols * cell width + the gaps between them */
+    max-width: calc(var(--max-cols) * var(--cell-max) + (var(--max-cols) - 1) * var(--gap));
 }

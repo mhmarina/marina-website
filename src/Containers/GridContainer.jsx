@@ -1,11 +1,10 @@
 import { PreviewItem } from '../Components/PreviewItem'
 import './styles/styles.css'
-import { previewData } from '../Data/PreviewData';
 
-export function GridContainer({items}){
+export function GridContainer({data}){
     return(
     <div class="grid-container">
-        {previewData.map((item) => 
+        {data.map((item) => 
             <PreviewItem
                 item={item}
                 kry={item.id}

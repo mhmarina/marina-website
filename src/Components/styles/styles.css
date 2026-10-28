@@ -1,9 +1,8 @@
 .preview-item{
     border: 5px solid black;
-    margin: 20px;
     padding: 5px;
     background-color: pink;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
     box-shadow: 15px 15px black;
     .thumbnail{
         width: 100%;
@@ -12,15 +11,25 @@
         object-position: top;
     }
     .headline{
-        font-size: 32px;
+        font-size: 24px;
         font-style: bold;
     }
     .summary{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 /* strip links */
 a {
     text-decoration: none;
     color: inherit
+}
+.container {
+    /* margin: 20px */
+}
+.container > * {
+    margin: 30px;
+}
+.category-bar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
 }
