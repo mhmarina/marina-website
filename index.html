@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M!</title>
     <link rel="icon" href="/marina-website/assets/curlss-8ef935ac.webp" type="image/webp">
-    <script type="module" crossorigin src="/marina-website/assets/index-6fb37da9.js"></script>
-    <link rel="stylesheet" href="/marina-website/assets/index-9676ba56.css">
+    <script>
+      // don't scroll on space
+      window.addEventListener('keydown', function(e) {
+        if(e.keyCode == 32 && e.target == document.body) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/marina-website/assets/index-434d3b31.js"></script>
+    <link rel="stylesheet" href="/marina-website/assets/index-4002224f.css">
   </head>
   <body>
     <div id="root"></div>
