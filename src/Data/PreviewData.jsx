@@ -19,5 +19,15 @@ export const previewData = [
         id: "breathe",
         headline: "Breathe",
         summary: "A 2D top down game about dealing with anxiety. Created in Unity as part of Gameheads' SAP 2024"
+    },
+    {
+        id: "dancing-dog",
+        headline: "Dancing Dog",
+        summary: "...and other WebGL projects!"
+    },
+    {   
+        id: "alder-mayo",
+        headline: "Alder Mayo",
+        summary: "VR digital twin of stroke patients for Mayoclinic students, associated with NEXT Lab @ ASU."
     }
 ]
