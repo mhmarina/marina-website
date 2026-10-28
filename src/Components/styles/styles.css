@@ -4,8 +4,6 @@
     padding: 5px;
     background-color: pink;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 250px;
-    overflow: clip;
     box-shadow: 15px 15px black;
     .thumbnail{
         width: 100%;
