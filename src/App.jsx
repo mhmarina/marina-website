@@ -1,15 +1,13 @@
-import { Game } from "./Game/Game";
-import { GridContainer } from "./Containers/GridContainer";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./Components/Pages/HomePage";
+import { DetailsPage } from "./Components/Pages/DetailsPage";
 
 function App() {
   return (
-    <div>
-      <div id="App">
-        ver 10/26:2
-        <Game></Game>
-        <GridContainer/>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/projects/:id" element={<DetailsPage/>} />
+    </Routes>
   );
 }
 
