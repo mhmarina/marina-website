@@ -88,7 +88,7 @@ export function Game(){
     function randomizeBlockHeight(){
         const height = Math.random() * (35 - 20) + 20;
         blockRef.current.style.height = `${height}px`;
-        blockRef.current.style.top = `${200-height}px`;
+        blockRef.current.style.top = `${201-height}px`;
     }
     // handlers
     function onSwitchSprite(src){
