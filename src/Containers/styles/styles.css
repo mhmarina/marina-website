@@ -2,7 +2,7 @@
     --gap: 30px;
     --cell-min: 250px;
     --cell-max: 300px;
-    --max-cols: 3;
+    --max-cols: 4;
 
     display: grid;
     gap: var(--gap);

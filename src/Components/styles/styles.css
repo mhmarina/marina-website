@@ -23,13 +23,16 @@ a {
     text-decoration: none;
     color: inherit
 }
-.container {
-    /* margin: 20px */
+.top-container {
+    padding: 20px;
 }
-.container > * {
-    margin: 30px;
+.top-container > * {
+    margin-bottom: 30px;
 }
 .category-bar {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
+}
+html {
+  scroll-behavior: smooth;
 }
