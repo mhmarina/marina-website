@@ -6,12 +6,14 @@ import { useLocalStorage } from "../Hooks/UseLocalStorage";
 import dino from '../assets/game/dino.png'; 
 import shrek from '../assets/game/shrek.png'; 
 import tungtung from '../assets/game/tungtung.png'; 
+import hellokitty from '../assets/game/hellokitty.png';
 
 export function Game(){
     const [round, setRound] = useState(0); // Use to track rounds as well as key to remount/reset component
     const [isGameOver, setIsGameOver] = useState(false); //rerender UI
     const [score, setScore] = useState(0)
     const [isNewHighScore, setIsNewHighScore] = useState(false)
+    const [charSprite, setCharSprite] = useState(dino)
     const {value: highscore, setValue: setHighScore} = useLocalStorage("high-score", 0)
 
     const blockRef = useRef()
@@ -73,7 +75,7 @@ export function Game(){
         const blockX = blockBounds.x;
         const containerX = blockRef.current.parentElement.getBoundingClientRect().x;
         const relativeX = blockX - containerX;
-        if(relativeX <= blockBounds.width/2){
+        if(relativeX <= blockBounds.width){
             if(!hasScoredRef.current){
                 randomizeBlockHeight()
                 setScore(prev => prev + 1)
@@ -92,6 +94,7 @@ export function Game(){
     }
     // handlers
     function onSwitchSprite(src){
+        setCharSprite(src)
         playerRef.current.src = src
     }
 
@@ -112,7 +115,7 @@ export function Game(){
                         {isNewHighScore && <h2>NEW HIGH SCORE!</h2>}
                     </div>}
                     <Block ref={blockRef} isGameOver={isGameOver}></Block>
-                    <Player ref={playerRef} isGameOver={isGameOver}></Player>
+                    <Player ref={playerRef} isGameOver={isGameOver} charSprite={charSprite}></Player>
                 </div>
                 <button onClick={() => onSwitchSprite(shrek)}>
                     Shrek
@@ -122,7 +125,10 @@ export function Game(){
                 </button>
                 <button onClick={() => onSwitchSprite(tungtung)}>
                     Tung Tung Sahur
-                </button> {/* maybe button should be a component */}
+                </button>
+                <button onClick={() => onSwitchSprite(hellokitty)}>
+                    Hello Kitty
+                </button>
             </div>
         </div>
     )

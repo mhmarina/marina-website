@@ -3,6 +3,7 @@ import dino from "../assets/game/dino.png"
 
 export function Player(props){
     const [isAnimated, setIsAnimated] = useState(false)
+
     const isGameOverRef = useRef(props.isGameOver);
     const timeoutRef = useRef(null);
 
@@ -45,7 +46,7 @@ export function Player(props){
             // add/remove class based on state
             className={isAnimated ? "animated-player" : ""}
             ref={props.ref}
-            src={dino}
+            src={props.charSprite}
         >
         </img>
     )
