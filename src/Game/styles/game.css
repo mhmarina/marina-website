@@ -6,7 +6,6 @@
     display: grid;
     /* place-items: center; */
     font-family: Minecraft;
-    margin: 20px;
 }
 #headline{
     * {
@@ -18,6 +17,8 @@
     height: 200px;
     border: 5px solid black;
     position: relative;
+    box-shadow: -15px 15px black;
+    z-index: -1
 }
 .game-over *{
     animation-play-state: paused !important;
@@ -77,4 +78,5 @@ button{
     border: 2px solid black;
     border-radius: 0;
     margin: 2px 2px 0 0;
+    background-color: white;
 }
