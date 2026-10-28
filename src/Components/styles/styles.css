@@ -1,0 +1,20 @@
+.preview-item{
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    background-color: pink;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    .thumbnail{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .headline{
+        font-size: 32px;
+        font-style: bold;
+    }
+    .summary{
+        font-size: 16px;
+    }
+}

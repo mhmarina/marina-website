@@ -1,4 +1,5 @@
 import { Game } from "./Game/Game";
+import { GridContainer } from "./Containers/GridContainer";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <div id="App">
         ver 10/26:2
         <Game></Game>
+        <GridContainer/>
       </div>
     </div>
   );

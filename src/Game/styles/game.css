@@ -15,7 +15,7 @@
 #game{
     width: 500px;
     height: 200px;
-    border: 2px solid black;
+    border: 5px solid black;
     position: relative;
 }
 .game-over *{
