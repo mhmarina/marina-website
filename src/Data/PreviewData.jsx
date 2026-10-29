@@ -13,40 +13,53 @@ export const gamesPreviewData = [
     {
         id: "breathe",
         headline: "Breathe",
-        summary: "A 2D top down game about dealing with anxiety. Created in Unity as part of Gameheads' SAP 2024"
+        summary: "A 2D top down game about dealing with anxiety. Created in Unity as part of Gameheads' SAP 2024",
+        imgsrc: "/thumbnail/breathe.png"
     },
     {   
         id: "alder-mayo",
         headline: "Alder Mayo",
-        summary: "VR digital twin of stroke patients for Mayoclinic students, associated with NEXT Lab @ ASU."
+        summary: "VR digital twin of stroke patients for Mayoclinic students, associated with NEXT Lab @ ASU.",
+        imgsrc: "/thumbnail/alder-mayo.png"
     },
     {   
         id: "santa-slays",
         headline: "Santa Slays",
-        summary: "Christmas themed FPS for ABK Game Jam 2023"
+        summary: "Christmas themed FPS for ABK Game Jam 2023",
+        imgsrc: "/thumbnail/santa-slays.png"
     },
     {   
         id: "barmade",
         headline: "Barmade",
-        summary: "WIP-Take care of your bar!"
+        summary: "WIP-Take care of your bar!",
+        imgsrc: "/thumbnail/barmade.png"
     },
     {   
         id: "valkyrie",
         headline: "Valkyrie",
-        summary: "Solo made 2D platformer on Gamemaker2"
+        summary: "Solo made 2D platformer on Gamemaker2",
+        imgsrc: "/thumbnail/valkyrie.png"
     },
     {   
         id: "zoom-spark",
         headline: "Zoom Spark",
-        summary: "Solo made 2D platformer on Gamemaker2"
+        summary: "Solo made 2D platformer on Gamemaker2",
+        imgsrc: "/thumbnail/zoom-spark.png"
     },
     {   
-        id: "mit-reality-hack",
-        headline: "MIT Reality Hack",
+        id: "plastic-seas",
+        headline: "Plastic Seas",
+        imgsrc: "/thumbnail/plastic-seas.png"
     },
     {   
         id: "evolution",
         headline: "Evolution",
+        imgsrc: "/thumbnail/evolution.png"
+    },
+    {   
+        id: "altheias-revenge",
+        headline: "Altheia's Revenge",
+        imgsrc: "/thumbnail/alethia-revenge.png"
     }
 ]
 /** @type {PreviewData[]} */
@@ -87,7 +100,7 @@ export const mlPreviewData = [
     {
         id: "marinagan",
         headline: "MarinaGAN",
-        summary: "Convolutional Neural Net (CNN) trained on my digital doodles"
+        summary: "Deep Convolutional Generational-Adversarial Network (DCGAN) trained on my digital doodles"
     },
     {
         id: "income-predictor",
@@ -97,7 +110,8 @@ export const mlPreviewData = [
     {
         id: "k-means-viz",
         headline: "K means visualizer",
-        summary: "Interactive k-means visualization"
+        summary: "Interactive k-means visualization",
+        imgsrc: "/thumbnail/k-means.png"
     },
     {
         id: "z-alogithm-viz",
@@ -139,5 +153,10 @@ export const artPreviewData = [
     {
         id: "soda-marketing",
         headline: "Software Dev Assoc @ ASU Marketing",
+    },
+    {
+        id: "witc",
+        headline: "ASU's First Women in Technology Marketing Campaign",
+        imgsrc: "/thumbnail/witc.png"
     }
 ]

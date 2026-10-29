@@ -3,10 +3,10 @@ import { Block } from "./Block";
 import { Player } from "./Player";
 import "./styles/game.css"
 import { useLocalStorage } from "../Hooks/UseLocalStorage";
-import dino from '../assets/game/dino.png'; 
-import shrek from '../assets/game/shrek.png'; 
-import tungtung from '../assets/game/tungtung.png'; 
-import hellokitty from '../assets/game/hellokitty.png';
+import dino from '/game/dino.png'; 
+import shrek from '/game/shrek.png'; 
+import tungtung from '/game/tungtung.png'; 
+import hellokitty from '/game/hellokitty.png';
 
 export function Game(){
     const [round, setRound] = useState(0); // Use to track rounds as well as key to remount/reset component

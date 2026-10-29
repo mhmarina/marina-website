@@ -1,6 +1,5 @@
 .preview-item{
     border: 5px solid black;
-    padding: 5px;
     background-color: pink;
     font-family: sans-serif;
     box-shadow: 15px 15px black;
@@ -32,6 +31,9 @@ a {
 .category-bar {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
+}
+.text-container{
+    padding: 5px
 }
 html {
   scroll-behavior: smooth;
