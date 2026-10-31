@@ -25,14 +25,27 @@ a {
 .category-bar {
     /* todo */
 }
-.section-header{
-    font-family: Lucidity-Expand;
-    font-size: 48px;
+@media screen and (min-width: 441px){
+    .section-header{
+        font-family: Lucidity-Expand;
+        font-size: 48px;
+    }
+    .page-header{
+        font-family: Lucidity-Expand;;
+        font-size: 60px;
+    }
 }
-.page-header{
-    font-family: Lucidity-Expand;;
-    font-size: 60px;
+@media screen and (max-width: 440px){
+    .section-header{
+        font-family: Lucidity-Expand;
+        font-size: 24px;
+    }
+    .page-header{
+        font-family: Lucidity-Expand;;
+        font-size: 32px;
+    }
 }
+
 .text-container{
     padding: 5px
 }
