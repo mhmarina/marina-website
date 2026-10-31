@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Lucidity-Expand';
+  src: local('Lucidity-Expand'), url('./fonts/lucidity-expand.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cascadia-Code';
+  src: local('Cascadia-Code'), url('./fonts/cascadia-code.ttf') format('truetype');
+}
+
 .grid-container {
     --gap: 30px;
     --cell-min: 250px;
