@@ -88,11 +88,11 @@ export const detailData = {
         "header": "Valkyrie",
         "hero": [
         {
-            "src": "/public/details/valkyrie/concept-sketch.png",
+            "src": "/details/valkyrie/concept-sketch.png",
             "caption": "Early concept art for Valkyrie!"
         },
         {
-            "src": "/public/details/valkyrie/concept-art.png",
+            "src": "/details/valkyrie/concept-art.png",
             "caption": "Visual Development for Valkyrie"
         }],
         "description": "Valkrie is a 2D platformer made in Gamemaker2! I touched every part of this game: programming, assets, level design and narrative design! This is a game that I was truly proud of and the first game that I can truly call mine!",
