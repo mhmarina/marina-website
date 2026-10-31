@@ -5,9 +5,10 @@ import { appDevPreviewData, artPreviewData, gamesPreviewData, graphicsPreviewDat
 export default function HomePage(){
     return(
         <div id="Home" className="top-container"
+            
         // style={{ display: "flex", alignItems: "flex-start" }}
         >
-            {/* <div style={{ flex: 1 }}> */}
+            <div className="inner-container">
                 ver 10/30:1
                 <Game></Game>
                 <div id="games"><CategoryBar header="Games" data={gamesPreviewData}></CategoryBar></div>
@@ -15,7 +16,7 @@ export default function HomePage(){
                 <div id="ml"><CategoryBar header="ML/AI" data={mlPreviewData}></CategoryBar></div>
                 <div id="appdev"><CategoryBar header="App Dev" data={appDevPreviewData}></CategoryBar></div>
                 <div id="art"><CategoryBar header="Art & Graphic Design" data={artPreviewData}></CategoryBar></div>
-            {/* </div> */}
+            </div>
 
             {/* factor out into navbar component and make it show on top (or just remove it on mobile, we like to scroll anyway)
             <nav style={{ position: "sticky", top: 0, width: "200px", height: "100vh", background: "black", display: "flex", flexDirection: "column", gap: "16px", padding: "24px" }}>

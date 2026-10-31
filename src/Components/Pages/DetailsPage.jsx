@@ -10,15 +10,17 @@ export function DetailsPage(){
     const data = detailData[id]
     return(
         <div className="top-container" id="Details">
-            {data ? <div>
+            {data ? <div className="inner-container">
                 <div className="page-header">{data["header"]}</div>
-                {data["hero"] && data["hero"].map((h) => 
-                    <Media
-                        src={h["src"]}
-                        caption={h["caption"]}
-                        hero={true}
-                    />
-                )}
+                <div>
+                    {data["hero"] && data["hero"].map((h) => 
+                        <Media
+                            src={h["src"]}
+                            caption={h["caption"]}
+                            hero={true}
+                        />
+                    )}
+                </div>
                 {data["links"] && data["links"].map((l,i) => 
                 <Link
                     key={i}

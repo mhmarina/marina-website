@@ -7,6 +7,14 @@
   src: local('Cascadia-Code'), url('./fonts/cascadia-code.ttf') format('truetype');
 }
 
+* {
+    font-family: Cascadia-Code;
+}
+
+.top-container {
+    padding: 20px;
+}
+
 .grid-container {
     --gap: 30px;
     --cell-min: 250px;
@@ -23,4 +31,10 @@
 
 .section-container{
     margin: 20px 0;
+}
+
+.inner-container{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
 }

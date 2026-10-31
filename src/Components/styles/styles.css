@@ -22,58 +22,47 @@ a {
     text-decoration: none;
     color: inherit
 }
-.top-container {
-    padding: 20px;
-}
-.top-container > * {
-    margin-bottom: 30px;
-}
 .category-bar {
     /* todo */
 }
 .section-header{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 32px;
+    font-family: Lucidity-Expand;
+    font-size: 48px;
 }
 .page-header{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 72px;
-}
-.home-section-header{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Lucidity-Expand;;
     font-size: 60px;
 }
 .text-container{
     padding: 5px
 }
-html {
-  scroll-behavior: smooth;
-}
-
 .page-img-container {
     display: flex;
     flex-direction: column;
     border: 5px solid black;
-    box-shadow: 15px -15px black;
+    box-shadow: 15px 15px black;
     width: 90%;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: start;
     .caption { 
         font-size: 14px;
         width: 100%;
-        font-family: sans-serif;
         padding: 5px;
      }
 }
 .media-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-    gap: 50px 0px;
     /* margin: 0 auto; */
-    align-items: start;
 }
 .page-img-container img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
+}
+.page-img-container:has(.hero) {
+    grid-column: 1 / -1;   /* span every column */
+    justify-self: center;  /* center the item within that span */
+    width: min(100%, 900px); /*needs a width, or it just fills the row*/
 }
 .page-img-container .hero {
     aspect-ratio: initial;
