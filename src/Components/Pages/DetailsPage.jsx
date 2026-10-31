@@ -12,22 +12,24 @@ export function DetailsPage(){
         <div className="top-container" id="Details">
             {data ? <div className="inner-container">
                 <div className="page-header">{data["header"]}</div>
-                <div>
+                <div className="hero-container">
                     {data["hero"] && data["hero"].map((h) => 
                         <Media
                             src={h["src"]}
                             caption={h["caption"]}
                             hero={true}
                         />
-                    )}
+                )}
                 </div>
-                {data["links"] && data["links"].map((l,i) => 
-                <Link
-                    key={i}
-                    domain={l["domain"]}
-                    display={l["display"]}
-                    url={l["url"]}
-                />)}
+                <div className="link-container">
+                    {data["links"] && data["links"].map((l,i) => 
+                    <Link
+                        key={i}
+                        domain={l["domain"]}
+                        display={l["display"]}
+                        url={l["url"]}
+                    />)}
+                </div>
                 <div>{data["description"]}</div>
                 {data["sections"] && data["sections"].map((s,i) =>
                 <Section
