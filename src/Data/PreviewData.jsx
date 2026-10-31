@@ -148,11 +148,11 @@ export const artPreviewData = [
     },
     {
         id: "sdfc-marketing",
-        headline: "SDFC Marketing",
+        headline: "SDFC Marketing & Graphic Design",
     },
     {
         id: "soda-marketing",
-        headline: "Software Dev Assoc @ ASU Marketing",
+        headline: "SoDA Rebrand",
     },
     {
         id: "witc",

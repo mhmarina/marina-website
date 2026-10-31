@@ -5,11 +5,11 @@ import "./styles/styles.css"
 export function PreviewItem({item}){
     return(
     <NavLink to={`projects/${item.id}`}>
-        <div class="preview-item">
-            <img class="thumbnail" src={item.imgsrc ? item.imgsrc : shrek}/>
-            <div class="text-container">
-                <div class="headline">{item.headline}</div>
-                <div class="summary">{item.summary}</div>
+        <div className="preview-item">
+            <img className="thumbnail" src={item.imgsrc ? item.imgsrc : shrek}/>
+            <div className="text-container">
+                <div className="headline">{item.headline}</div>
+                <div className="summary">{item.summary}</div>
             </div>
         </div>
     </NavLink>

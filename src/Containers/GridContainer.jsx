@@ -3,7 +3,7 @@ import './styles/styles.css'
 
 export function GridContainer({data}){
     return(
-    <div class="grid-container">
+    <div className="grid-container">
         {data.map((item) => 
             <PreviewItem
                 item={item}
