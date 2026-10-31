@@ -26,6 +26,9 @@
 .game-start *{
     animation-play-state: running !important;
 }
+.game-window{
+    background-color: white;
+}
 #game-over-overlay{
     position: absolute;
     display: flex;

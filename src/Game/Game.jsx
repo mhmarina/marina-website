@@ -107,7 +107,7 @@ export function Game(){
                     <h4>Round: {round}</h4>
                 </div>
                 <div id="game"
-                    className={isGameOver ? "game-over" : "game-start"}
+                    className={isGameOver ? "game-over game-window" : "game-start game-window"}
                 >
                     {isGameOver && 
                     <div id="game-over-overlay">
