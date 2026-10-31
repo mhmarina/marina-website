@@ -53,7 +53,7 @@ export const detailData = {
             "display": "Watch the trailer for Breathe!"
         }],
         "sections": [{
-            "sectionHeader": "Prototyping & Ideation",
+            "sectionHeader": "Prototyping",
             "description": "Here are some videos of early prototyping of breathe inside Unity!",
             "media": [
                 {"src": "/details/breathe/prototype-sc.png"},
