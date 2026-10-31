@@ -6,7 +6,7 @@ export function Section({media, sectionHeader, description}){
             <div className="section-header">{sectionHeader}</div>
             <div>{description}</div>
             <div className="media-container">
-                {media.map((m,i) => 
+                {media && media.map((m,i) => 
                     <Media
                     key={i}
                     src={m["src"]}

@@ -5,6 +5,7 @@
  * @property {Link[]} links
  * @property {Section[]} sections
  * @property {string[]} techStack
+ * @property {Media[]} hero
  * @property {string[]} custom
  */
 
@@ -80,6 +81,24 @@ export const detailData = {
                  "caption": "A poster of out game, showcased at Gameheads' 10th Annual Games Showcase!"
                 }
             ]
+        }]
+    },
+    "valkyrie": {
+        "header": "Valkyrie",
+        "hero": [
+        {
+            "src": "/public/details/valkyrie/concept-sketch.png",
+            "caption": "Early concept art for Valkyrie!"
+        },
+        {
+            "src": "/public/details/valkyrie/concept-art.png",
+            "caption": "Visual Development for Valkyrie"
+        }],
+        "description": "Valkrie is a 2D platformer made in Gamemaker2! I touched every part of this game: programming, assets, level design and narrative design! This is a game that I was truly proud of and the first game that I can truly call mine!",
+        "links": [{
+            "domain": "itch.io",
+            "url": "https://mhmarina.itch.io/valkyrie",
+            "display": "Play Valkyrie!!"
         }]
     }
 }

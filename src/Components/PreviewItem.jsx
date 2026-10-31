@@ -8,8 +8,8 @@ export function PreviewItem({item}){
         <div className="preview-item">
             <img className="thumbnail" src={item.imgsrc ? item.imgsrc : shrek}/>
             <div className="text-container">
-                <div className="headline">{item.headline}</div>
-                <div className="summary">{item.summary}</div>
+                {item.headline && <div className="headline">{item.headline}</div>}
+                {item.summary && <div className="summary">{item.summary}</div>}
             </div>
         </div>
     </NavLink>

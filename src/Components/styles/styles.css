@@ -55,6 +55,8 @@ html {
     flex-direction: column;
     border: 5px solid black;
     box-shadow: 15px -15px black;
+    width: 90%;
+    margin: 30px 0;
     .caption { 
         font-size: 14px;
         width: 100%;
@@ -64,13 +66,16 @@ html {
 }
 .media-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 50px 45px;
-    padding: 25px 0px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 50px 0px;
     /* margin: 0 auto; */
     align-items: start;
 }
 .page-img-container img {
     aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.page-img-container .hero {
+    aspect-ratio: initial;
     object-fit: cover;
 }
