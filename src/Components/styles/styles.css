@@ -33,6 +33,14 @@ a {
 }
 .section-header{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+}
+.page-header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+}
+.home-section-header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
 }
 .text-container{
@@ -40,4 +48,29 @@ a {
 }
 html {
   scroll-behavior: smooth;
+}
+
+.page-img-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    box-shadow: 15px -15px black;
+    .caption { 
+        font-size: 14px;
+        width: 100%;
+        font-family: sans-serif;
+        padding: 5px;
+     }
+}
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 50px 45px;
+    padding: 25px 0px;
+    /* margin: 0 auto; */
+    align-items: start;
+}
+.page-img-container img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }

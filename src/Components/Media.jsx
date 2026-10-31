@@ -1,7 +1,8 @@
 export function Media({src, caption}){
     return(
-    <div>
+    <div className="page-img-container">
         <img src={src}/>
-        <div>{caption}</div>
+        {caption &&
+        <div className="caption">{caption}</div>}
     </div>)
 }

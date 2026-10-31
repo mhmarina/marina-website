@@ -10,7 +10,7 @@ export function DetailsPage(){
     return(
         <div className="top-container" id="Details">
             {data ? <div>
-                {data["header"]}
+                <div className="page-header">{data["header"]}</div>
                 {data["links"].map((l,i) => 
                 <Link
                     key={i}
@@ -18,7 +18,7 @@ export function DetailsPage(){
                     display={l["display"]}
                     url={l["url"]}
                 />)}
-                {data["description"]}
+                <div>{data["description"]}</div>
                 {data["sections"].map((s,i) =>
                 <Section
                     key={i}

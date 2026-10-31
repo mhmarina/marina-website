@@ -73,7 +73,7 @@ export const detailData = {
             "sectionHeader": "Showcases",
             "description": "Breathe was unveiled during Gameheads' 10th Annual Games showcase. It was also showcased to hundreds of people in two games conferences",
             "media": [
-                {"src": "/details/breathe/breathe-demo-gif",
+                {"src": "/details/breathe/breathe-demo.gif",
                  "caption": "A demo of Breathe!"
                 },
                 {"src": "/details/breathe/breathe-x-gameheads-showcase.jpg",
