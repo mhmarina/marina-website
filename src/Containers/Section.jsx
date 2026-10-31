@@ -1,8 +1,8 @@
-import { Media } from "./Media";
+import { Media } from "../Components/Media";
 
 export function Section({media, sectionHeader, description}){
     return(
-        <div>
+        <div className="section-container">
             <div className="section-header">{sectionHeader}</div>
             <div>{description}</div>
             <div className="media-container">

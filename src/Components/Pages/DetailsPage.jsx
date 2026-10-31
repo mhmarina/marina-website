@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { detailData } from "../../Data/DetailData";
 import { UnderConstructionPage } from "./UnderConstructionPage";
-import { Section } from "../Section";
+import { Section } from "../../Containers/Section";
 import { Link } from "../Link";
 import { Media } from "../Media";
 

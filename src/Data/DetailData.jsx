@@ -34,6 +34,10 @@ export const detailData = {
         "header": "Breathe",
         "description": "Breathe is a 2D top down game created in Unity 2D. It was created in the Summer of 2024 as part of Gameheads' Summer Accelerated Program (SAP). I worked as the primary programmer and secondary artist on this game. This was a lot of fun to develop!",
         "techStack": ["unity", "github", "C#"],
+        "hero": [{
+            "src": "/details/breathe/breathe-demo.gif",
+            "caption": "A demo of Breathe!"
+        }],
         "links": [{
             "domain": "itch.io",
             "url": "https://gameheads.itch.io/breathe",
@@ -74,11 +78,8 @@ export const detailData = {
             "sectionHeader": "Showcases",
             "description": "Breathe was unveiled during Gameheads' 10th Annual Games showcase. It was also showcased to hundreds of people in two games conferences",
             "media": [
-                {"src": "/details/breathe/breathe-demo.gif",
-                 "caption": "A demo of Breathe!"
-                },
                 {"src": "/details/breathe/breathe-x-gameheads-showcase.jpg",
-                 "caption": "A poster of out game, showcased at Gameheads' 10th Annual Games Showcase!"
+                 "caption": "A poster of our game, showcased at Gameheads' 10th Annual Games Showcase!"
                 }
             ]
         }]
