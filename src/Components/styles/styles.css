@@ -81,3 +81,9 @@ a {
     aspect-ratio: initial;
     object-fit: cover;
 }
+.link-bar{
+    display: flex;
+    gap: 5px;
+    color: #9d1f60;
+    text-decoration: underline;
+}
