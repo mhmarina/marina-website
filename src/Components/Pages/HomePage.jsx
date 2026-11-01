@@ -9,7 +9,6 @@ export default function HomePage(){
         // style={{ display: "flex", alignItems: "flex-start" }}
         >
             <div className="inner-container">
-                ver 10/30:1
                 <Game></Game>
                 <div id="games"><CategoryBar header="Games" data={gamesPreviewData}></CategoryBar></div>
                 <div id="graphics"><CategoryBar header="Computer Graphics & DataViz" data={graphicsPreviewData}></CategoryBar></div>
