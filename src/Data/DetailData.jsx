@@ -32,7 +32,7 @@
 export const detailData = {
     "breathe": {
         "header": "Breathe",
-        "description": "Breathe is a 2D top down game created in Unity 2D. It was created in the Summer of 2024 as part of Gameheads' Summer Accelerated Program (SAP). I worked as the primary programmer and secondary artist on this game. This was a lot of fun to develop!",
+        "description": "Breathe is a 2D top down game where the player roleplays as a kupuna from Hawaiian mythology, whose goal is to vanquish the Mo’o monsters plaguing their home in Waipi’o valley. The game was created as part of Gameheads' Summer Accelerated Program (SAP) for 2024, and was showcased at 2025 Conference on BIPOC Game Studies at Strong Museum of Play, RIT EDGE, and Honolulu Museum.",
         "techStack": ["unity", "github", "C#"],
         "hero": [{
             "src": "/details/breathe/breathe-demo.gif",
@@ -54,7 +54,7 @@ export const detailData = {
         }],
         "sections": [{
             "sectionHeader": "Prototyping",
-            "description": "Here are some videos of early prototyping of breathe inside Unity!",
+            "description": "Here are some videos of early prototyping of Breathe inside Unity! A lot of work was done to develop the core mechanic of inhaling and exhaling both the enemies as well as the mana.",
             "media": [
                 {"src": "/details/breathe/prototype-sc.png"},
                 {"src": "/details/breathe/prototype-1.gif"},
@@ -73,15 +73,6 @@ export const detailData = {
                  "caption": "My background art beautifully composed in game by our artist Serena Cai!"
                 }
             ]
-        },
-        {
-            "sectionHeader": "Showcases",
-            "description": "Breathe was unveiled during Gameheads' 10th Annual Games showcase. It was also showcased to hundreds of people in two games conferences",
-            "media": [
-                {"src": "/details/breathe/breathe-x-gameheads-showcase.jpg",
-                 "caption": "A poster of our game, showcased at Gameheads' 10th Annual Games Showcase!"
-                }
-            ]
         }]
     },
     "valkyrie": {
@@ -89,17 +80,17 @@ export const detailData = {
         "hero": [
         {
             "src": "/details/valkyrie/concept-sketch.png",
-            "caption": "Early concept art for Valkyrie!"
+            "caption": "Early concept art for Valkyrie"
         },
         {
             "src": "/details/valkyrie/concept-art.png",
             "caption": "Visual Development for Valkyrie"
         }],
-        "description": "Valkrie is a 2D platformer made in Gamemaker2! I touched every part of this game: programming, assets, level design and narrative design! This is a game that I was truly proud of and the first game that I can truly call mine!",
+        "description": "Valkrie is a 2D platformer made in Gamemaker2. I solo developed this game includng GML scripting, UI design, illustrations, animations, level design as well as narrative design! This game has both a web build as well as a windows build.",
         "links": [{
             "domain": "itch.io",
             "url": "https://mhmarina.itch.io/valkyrie",
-            "display": "Play Valkyrie!!"
+            "display": "Play Valkyrie!"
         }]
     }
 }
