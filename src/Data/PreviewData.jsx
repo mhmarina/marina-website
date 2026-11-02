@@ -43,13 +43,14 @@ export const gamesPreviewData = [
     {   
         id: "zoom-spark",
         headline: "Zoom Spark",
-        summary: "Solo made 2D platformer on Gamemaker2",
+        summary: "Platformer that teaches about SDKs for ASU x Zoom Spark 2025",
         imgsrc: "/thumbnail/zoom-spark.png"
     },
     {   
         id: "plastic-seas",
         headline: "Plastic Seas",
-        imgsrc: "/thumbnail/plastic-seas.png"
+        imgsrc: "/thumbnail/plastic-seas.png",
+        "summary": "Top 10 Finalist at MIT Reality Hack 2025"
     },
     {   
         id: "evolution",
