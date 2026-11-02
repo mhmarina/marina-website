@@ -152,6 +152,35 @@ export const detailData = {
             "sectionHeader": "ASU's Zoom Spark Challenge",
             "description": "This game was created for ASU's Zoom Spark challenge for Fall 2025. The ask was to create a game that teaches player about SDKs, particularly zoom's SDKs. This game was selected as second place winner among ~10 submissions!"
         }]
+    },
+    "santa-slays":{
+        "header": "Santa Slays",
+        "description": "Santa Slays is a christmas themed FPS where you play as santa trying to put gifts in his sleigh as he fights off evil snowmen. This was created as part of ABK 2023 Christmas Game jam and was also the first game I ever developed on Unity! I worked on UI integration, scene design (including post processing), audio integration as well as a few illustrations.",
+        "hero": [{
+            "src": "/details/santa-slays/santa-slays.jpg"
+        },
+        {
+            "src": "/details/santa-slays/santa-slays-end.png",
+            "caption": "My illustration for game win :)"
+        },
+        {
+            "src": "/details/santa-slays/loss.png",
+            "caption": "My illustration for game loss where Santa never comes :("
+        }],
+        "links": [{
+            "domain": "itch.io",
+            "url": "https://anis-karam.itch.io/santa-slays-windows",
+            "display": "Play Santa Slays on Windows!"
+        },
+        {
+            "domain": "itch.io",
+            "url": "https://anis-karam.itch.io/santa-slays-macos",
+            "display": "Play Santa Slays on MacOS!"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/ABK2023-GameJam-Christmas"
+        }]
     }
 }
 
