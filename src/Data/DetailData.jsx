@@ -128,6 +128,30 @@ export const detailData = {
                 "src": "/details/alder-mayo/harold-dab.png"
             }]
         }]
+    },
+    "zoom-spark":{
+        "header": "Zoom Spark",
+        "description": "A platformer-puzzle game, that teaches players specifics about SDKs as well as concepts like modularity through hands-on building. Created for ASU's Zoom Spark Challenge. The game being a platformer requiring the player to search for the right objects mirrors the challenge of developing using SDKs and having to sift through documentation to find exactly what they're looking for. Finally, the developer puts it all together, developing new skills and acquiring new knowledge as they go.",
+        "hero": [{
+            "src": "/details/zoom-spark/gameplay.png"
+        }],
+        "links": [{
+            "domain": "youtube",
+            "url": "https://www.youtube.com/watch?v=3HxsbCWPL24",
+            "display": "Checkout the playthrough"
+        },
+        {
+            "domain": "itch.io",
+            "url": "https://mhmarina.itch.io/zoom-spark"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/zoom-spark"
+        }],
+        "sections": [{
+            "sectionHeader": "ASU's Zoom Spark Challenge",
+            "description": "This game was created for ASU's Zoom Spark challenge for Fall 2025. The ask was to create a game that teaches player about SDKs, particularly zoom's SDKs. This game was selected as second place winner among ~10 submissions!"
+        }]
     }
 }
 
