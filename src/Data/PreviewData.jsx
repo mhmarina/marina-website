@@ -83,7 +83,8 @@ export const graphicsPreviewData = [
     },
     {
         id: "virtual-biz-card",
-        headline: "Virtual Business Card"
+        headline: "Virtual Business Card",
+        summary: "CSS Exercise!"
     },
     {
         id: "dancing-dog",

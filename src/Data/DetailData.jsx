@@ -224,5 +224,19 @@ export const detailData = {
             "display": "Visit the site"
         }],
         "iframe": "https://mhmarina.github.io/WebGL/Dancer/Nasralla_figure.html"
+    },
+    "virtual-biz-card":{
+        "header": "Virtual Business Card",
+        "iframe": "https://virtual-business-card.netlify.app/",
+        "links": [{
+            "domain": "link",
+            "url": "https://virtual-business-card.netlify.app/",
+            "display": "Visit the site"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/business-card"
+        }],
+
     }
 }
