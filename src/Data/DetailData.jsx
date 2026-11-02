@@ -6,7 +6,7 @@
  * @property {Section[]} sections
  * @property {string[]} techStack
  * @property {Media[]} hero
- * @property {string[]} custom
+ * @property {string} iframe
  */
 
 /** 
@@ -214,35 +214,15 @@ export const detailData = {
             "domain": "github",
             "url": "https://github.com/mhmarina/MIT-reality-hack"
         }]
+    },
+    "dancing-dog":{
+        "header": "WebGL Projects",
+        "description": "Projects from my intro to computer graphics class",
+        "links": [{
+            "domain": "link",
+            "url": "https://mhmarina.github.io/WebGL/Dancer/Nasralla_figure.html",
+            "display": "Visit the site"
+        }],
+        "iframe": "https://mhmarina.github.io/WebGL/Dancer/Nasralla_figure.html"
     }
 }
-
-// Snippet to load custom components:
-// import WeatherDemo from "../components/demos/WeatherDemo";
-
-// export const detailsData = {
-//   "weather-app": {
-//     description: "Longer write-up...",
-//     techStack: ["React"],
-//     Custom: WeatherDemo,   // only this project has one
-//   },
-//   "portfolio-site": {
-//     description: "...",
-//     techStack: ["React", "Vite"],
-//   },
-// };
-
-// // pages/ProjectDetails.jsx
-// function ProjectDetails() {
-//   const { id } = useParams();
-//   const details = detailsData[id];
-//   const Custom = details.Custom;
-
-//   return (
-//     <article>
-//       <h1>{previewData.find(p => p.id === id).title}</h1>
-//       <p>{details.description}</p>
-//       {Custom && <Custom />}
-//     </article>
-//   );
-// }

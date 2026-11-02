@@ -1,8 +1,5 @@
 .preview-item{
-    border: 5px solid black;
     background-color: pink;
-    font-family: sans-serif;
-    box-shadow: 15px 15px black;
     .thumbnail{
         width: 100%;
         height: 150px;
@@ -21,6 +18,10 @@
 a {
     text-decoration: none;
     color: inherit
+}
+.border-frame{
+    border: 5px solid black;
+    box-shadow: 15px 15px black;
 }
 .category-bar {
     /* todo */
@@ -52,8 +53,6 @@ a {
 .page-img-container {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
-    box-shadow: 15px 15px black;
     width: 90%;
     margin-bottom: 20px;
     align-self: start;
@@ -81,6 +80,11 @@ a {
 .page-img-container .hero {
     aspect-ratio: initial;
     object-fit: cover;
+}
+.iframe {
+  width: 100%;
+  height: 800px;  
+  scroll-behavior: none; 
 }
 .link-bar{
     display: flex;

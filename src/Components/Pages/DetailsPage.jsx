@@ -4,6 +4,7 @@ import { UnderConstructionPage } from "./UnderConstructionPage";
 import { Section } from "../../Containers/Section";
 import { Link } from "../Link";
 import { Media } from "../Media";
+import { IFrame } from "../IFrame";
 
 export function DetailsPage(){
     const { id } = useParams()
@@ -11,17 +12,17 @@ export function DetailsPage(){
     return(
         <div className="top-container" id="Details">
             {data ? <div className="inner-container">
-                <div className="page-header">{data["header"]}</div>
-                <div className="hero-container">
-                    {data["hero"] && data["hero"].map((h) => 
+                {data["header"] && <div className="page-header">{data["header"]}</div>}
+                {data["hero"] && <div className="hero-container">
+                    {data["hero"].map((h) => 
                         <Media
                             src={h["src"]}
                             caption={h["caption"]}
                             hero={true}
                         />
                 )}
-                </div>
-                <div className="link-container">
+                </div>}
+                {data["links"] && <div className="link-container">
                     {data["links"] && data["links"].map((l,i) => 
                     <Link
                         key={i}
@@ -29,8 +30,9 @@ export function DetailsPage(){
                         display={l["display"]}
                         url={l["url"]}
                     />)}
-                </div>
-                <div>{data["description"]}</div>
+                </div>}
+                {data["description"] && <div>{data["description"]}</div>}
+                {data["iframe"] && <IFrame src={data["iframe"]}/>}
                 {data["sections"] && data["sections"].map((s,i) =>
                 <Section
                     key={i}

@@ -5,7 +5,7 @@ import "./styles/styles.css"
 export function PreviewItem({item}){
     return(
     <NavLink to={`projects/${item.id}`}>
-        <div className="preview-item">
+        <div className="preview-item border-frame">
             <img className="thumbnail" src={item.imgsrc ? `/marina-website${item.imgsrc}` : shrek}/>
             <div className="text-container">
                 {item.headline && <div className="headline">{item.headline}</div>}

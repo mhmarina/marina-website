@@ -1,5 +1,5 @@
 import { faDevpost, faGithub, faItchIo, faLinkedin, faReadme, faUnity, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -12,7 +12,8 @@ export function Link({domain, url, display}){
         "redbubble": faCartShopping,
         "unity": faUnity,
         "readme": faReadme,
-        "devpost": faDevpost
+        "devpost": faDevpost,
+        "link": faUpRightFromSquare
     }
     
     return(

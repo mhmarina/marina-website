@@ -68,7 +68,8 @@ export const graphicsPreviewData = [
     {
         id: "dancing-dog",
         headline: "Dancing Dog",
-        summary: "...and other WebGL projects!"
+        summary: "...and other WebGL projects!",
+        "imgsrc": "/thumbnail/webgl-dog.png"
     },
     {
         id: "minecraft-dataviz",
