@@ -181,6 +181,39 @@ export const detailData = {
             "domain": "github",
             "url": "https://github.com/mhmarina/ABK2023-GameJam-Christmas"
         }]
+    },
+    "plastic-seas":{
+        "header": "Plastic Seas",
+        "description": "Every year, 19-23 million tonnes of plastic waste leak into our rivers, lakes, and oceans, devastating ecosystems and communities worldwide. Inspired by places without access to potable drinking water, like the Dominican Republic and Flint, Michigan, this experience uses narrative storytelling, dark humor, and interactivity to energize viewers to take action against plastic pollution.",
+        "hero": [{
+            "src": "/details/plastic-seas/sc.png"
+        },
+        {
+            "src": "/details/plastic-seas/paul.png",
+        }],
+        "sections": [{
+            "sectionHeader": "Experience",
+            "description": "Plastic Seas was created as part of MIT Reality Hack in Boston in January 2025! This was my first time in Boston, as well as my first time developing for Virtual Reality! It was an awesome experience. Plastic Seas ended up landing in the top 10 finalists out of ~80 teams.",
+            "media": [{
+                "src": "/details/plastic-seas/pic1.jpg",
+                "caption": "photos courtesy of Latiece Brown!"
+            },
+            {
+                "src": "/details/plastic-seas/pic2.jpg"
+            }]
+        }],
+        "links": [{
+            "domain": "devpost",
+            "url": "https://devpost.com/software/plastic-seas",
+        },
+        {
+            "domain": "youtube",
+            "url": "https://www.youtube.com/watch?v=NBFljO0--6o&t=1s0"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/MIT-reality-hack"
+        }]
     }
 }
 
