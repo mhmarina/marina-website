@@ -1,4 +1,5 @@
-import { faGithub, faItchIo, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faItchIo, faLinkedin, faReadme, faUnity, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -7,7 +8,10 @@ export function Link({domain, url, display}){
         "github": faGithub,
         "youtube": faYoutube,
         "itch.io": faItchIo,
-        "linkedin": faLinkedin
+        "linkedin": faLinkedin,
+        "redbubble": faCartShopping,
+        "unity": faUnity,
+        "readme": faReadme
     }
     return(
         <div className="link-bar">

@@ -92,6 +92,42 @@ export const detailData = {
             "url": "https://mhmarina.itch.io/valkyrie",
             "display": "Play Valkyrie!"
         }]
+    },
+    "alder-mayo":{
+        "header": "Alder Mayo",
+        "description": "In a partnership with Mayo Clinic, a team of Next Lab student workers are creating a virtual reality training simulation for medical students to practice diagnosing strokes. As a programmer on this project with NEXT Lab, I worked on desigining and implementing responsive, event driven systems, both XR and desktop controls, User Interface, Audio recognition, and more.",
+        "links": [{
+            "domain": "unity",
+            "url": "https://alder-mayo-sept-8-2025.netlify.app/",
+            "display": "Try the demo!"
+        },
+        {
+            "domain": "readme",
+            "url": "https://nextlab.asu.edu/alder-mayo/",
+            "display": "Read Next Lab's blog"
+        }],
+        "hero": [{
+            "src": "/details/alder-mayo/aldermayo.webp"
+        },
+        {
+            "src": "/details/alder-mayo/early-dev.png",
+            "caption": "Early development of the project featuring Susan"
+        }],
+        "sections": [{
+            "sectionHeader": "Features",
+            "description": "In a real stroke assessment, a provider would assess a patient based on visuals, such as droop eyes, sound, such as slurred speech, as well as interacting with them: such as their response to commands like raising their arm or reading simple words. We set out to build digital twins of stroke patients that students are The Mayo Clinic can train on in virtual reality. The experience would also be able to evaluate a student's assessments.",
+            "media": [{
+                "src": "/details/alder-mayo/harold-armup.png",
+                "caption": "Harold responding to raising his arms up"
+            },
+            {
+                "src": "/details/alder-mayo/assessment.png",
+                "caption": "Interactable tablet used to assess"
+            },
+            {
+                "src": "/details/alder-mayo/harold-dab.png"
+            }]
+        }]
     }
 }
 
