@@ -80,7 +80,8 @@ export const graphicsPreviewData = [
     {
         id: "banned-books-dataviz",
         headline: "Banned Books Dataviz",
-        summary: "Custom D3 story on banned books"
+        summary: "Custom D3.js data story on banned books",
+        imgsrc: "/thumbnail/banned-book.jpg"
     },
     {
         id: "virtual-biz-card",

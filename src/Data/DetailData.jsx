@@ -266,5 +266,18 @@ export const detailData = {
             "domain": "github",
             "url": "https://github.com/mhmarina/CSE512-minecraft"
         }]
+    },
+    "banned-books-dataviz":{
+        "header": "Banned Books Dataviz",
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/d3-banned-books"
+        },
+        {
+            "domain": "link",
+            "url": "https://mhmarina.github.io/d3-banned-books/",
+            "display": "check out the site!"
+        }],
+        "iframe": "https://mhmarina.github.io/d3-banned-books/"
     }
 }
