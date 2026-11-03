@@ -291,5 +291,18 @@ export const detailData = {
             "display": "Watch the Pacman demo!",
             "url": "https://www.youtube.com/watch?v=yoeSyaLlzjQ"
         }]
+    },
+    "k-means-viz":{
+        "header": "K-means Visualization",
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/k-means"
+        },
+        {
+            "domain": "link",
+            "url": "https://mhmarina.github.io/k-means/",
+            "display": "check out the site!"
+        }],
+        "iframe": "https://mhmarina.github.io/k-means/"
     }
 }
