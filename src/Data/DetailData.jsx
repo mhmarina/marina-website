@@ -304,5 +304,18 @@ export const detailData = {
             "display": "check out the site!"
         }],
         "iframe": "https://mhmarina.github.io/k-means/"
+    },
+    "z-alogithm-viz":{
+        "header": "Z-Algorithm Visualization",
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/z-algorithm"
+        },
+        {
+            "domain": "link",
+            "url": "https://mhmarina.github.io/z-algorithm/",
+            "display": "check out the site!"
+        }],
+        "iframe": "https://mhmarina.github.io/z-algorithm/"
     }
 }

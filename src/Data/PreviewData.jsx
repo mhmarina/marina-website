@@ -118,7 +118,8 @@ export const mlPreviewData = [
     {
         id: "z-alogithm-viz",
         headline: "Z algorithm",
-        summary: "Z algorithm helper"
+        summary: "Helper for the Z Algorithm for exact pattern matching",
+        imgsrc: "/thumbnail/z-algo.png"
     }
 ]
 
