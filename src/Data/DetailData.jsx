@@ -279,5 +279,17 @@ export const detailData = {
             "display": "check out the site!"
         }],
         "iframe": "https://mhmarina.github.io/d3-banned-books/"
+    },
+    "monogame-game-engine": {
+        "header": "Monogame Game Engine",
+        "description": "Built engine supporting lights, cameras, colliders, GUI, and GameObjects using Monogame and C#. Then I created a Pacman clone to validate functionality. The Pacman clone supports procedural level generation as well as A* search based enemy AI. This project was created throughout my Game Engine Development class.",
+        "hero": [{
+            "src": "/thumbnail/monogame.png"
+        }],
+        "links": [{
+            "domain": "youtube",
+            "display": "Watch the Pacman demo!",
+            "url": "https://www.youtube.com/watch?v=yoeSyaLlzjQ"
+        }]
     }
 }

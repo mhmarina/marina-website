@@ -92,7 +92,8 @@ export const graphicsPreviewData = [
     {
         id: "monogame-game-engine",
         headline: "Monogame Game Engine",
-        summary: "Created a monogame game engine"
+        summary: "Created a monogame game engine",
+        imgsrc: "/thumbnail/monogame.png"
     }
 ]
 
