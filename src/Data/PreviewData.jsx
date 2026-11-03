@@ -89,11 +89,6 @@ export const graphicsPreviewData = [
         imgsrc: "/thumbnail/virtual-biz-card.png"
     },
     {
-        id: "dancing-dog",
-        headline: "Dancing Dog",
-        summary: "...and other WebGL projects!"
-    },
-    {
         id: "monogame-game-engine",
         headline: "Monogame Game Engine",
         summary: "Created a monogame game engine"
