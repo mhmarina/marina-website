@@ -238,5 +238,15 @@ export const detailData = {
             "url": "https://github.com/mhmarina/business-card"
         }],
 
+    },
+    "evolution": {
+        "header": "Evolution",
+        "description": "Created for Gameheads with the theme, 'Evolution'. I wanted to incorporate the idea of breaking boundaries by having the player literally breaking down walls, bringing color to people's lives and then eventually destroying the 'box' that trapped everybody in. The player is able to inspire these people by constantly moving, while the rest remain stagnant. I also wanted to incorporate the idea of 'evolution causes epxansion' I tried doing this by having the player gain an extra move, and expand their screen view everytime they 'evolved' or broke down a wall. This game was created using Gamemaker2, using the framework created in my other project, Valkyrie.",
+        "links": [{
+            "domain": "itch.io",
+            "display": "Play on itch!",
+            "url": "https://mhmarina.itch.io/evolution"
+        }],
+        "hero": [{"src": "/thumbnail/evolution.png"}]
     }
 }
