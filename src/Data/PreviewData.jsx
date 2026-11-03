@@ -69,12 +69,13 @@ export const graphicsPreviewData = [
         id: "dancing-dog",
         headline: "Dancing Dog",
         summary: "...and other WebGL projects!",
-        "imgsrc": "/thumbnail/webgl-dog.png"
+        imgsrc: "/thumbnail/webgl-dog.png"
     },
     {
         id: "minecraft-dataviz",
-        headline: "Minecraft Server Uptime",
-        summary: "...and other visualizations!"
+        headline: "Minecrafta Data Viz Platform",
+        summary: "Server uptime & historical data",
+        imgsrc: "/thumbnail/mc-dataviz.png"
     },
     {
         id: "banned-books-dataviz",

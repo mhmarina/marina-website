@@ -248,5 +248,23 @@ export const detailData = {
             "url": "https://mhmarina.itch.io/evolution"
         }],
         "hero": [{"src": "/thumbnail/evolution.png"}]
+    },
+    "minecraft-dataviz": {
+        "header": "Minecraft Data Viz Platform",
+        "description": "A distributed data analytics platform that continuously tracks, aggregates and visualizes statistics for over 6000 Minecraft servers. By leveraging CockroachDB distributed architecture, replication and serializable isolation, the system ensures fault tolerance, strong consistency, and high data availability.",
+        "hero": [{
+            "src": "/thumbnail/mc-dataviz.png",
+            "caption": "Architectural diagram for the data pipeline, as well as the frontend and backend"
+        },
+        {
+            "src": "/details/minecraft-data-viz/search.png"
+        },
+        {
+            "src": "/details/minecraft-data-viz/uptime.png"
+        }],
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/CSE512-minecraft"
+        }]
     }
 }
