@@ -59,7 +59,7 @@ export const gamesPreviewData = [
     },
     {   
         id: "altheias-revenge",
-        headline: "Altheia's Revenge",
+        headline: "Alethia's Revenge",
         imgsrc: "/thumbnail/alethia-revenge.png"
     }
 ]
