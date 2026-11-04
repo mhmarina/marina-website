@@ -107,7 +107,8 @@ export const mlPreviewData = [
     {
         id: "income-predictor",
         headline: "Income Predictor",
-        summary: "Use traditional ML to predict income"
+        summary: "Use traditional ML to predict income",
+        imgsrc: "/details/income-predictor/parallel-coords.png"
     },
     {
         id: "k-means-viz",

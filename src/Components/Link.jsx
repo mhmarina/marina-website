@@ -1,4 +1,4 @@
-import { faDevpost, faGithub, faItchIo, faLinkedin, faReadme, faUnity, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faDevpost, faGithub, faHuggingFace, faItchIo, faLinkedin, faReadme, faUnity, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faCartShopping, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -13,7 +13,8 @@ export function Link({domain, url, display}){
         "unity": faUnity,
         "readme": faReadme,
         "devpost": faDevpost,
-        "link": faUpRightFromSquare
+        "link": faUpRightFromSquare,
+        "huggingface": faHuggingFace
     }
     
     return(

@@ -317,5 +317,46 @@ export const detailData = {
             "display": "check out the site!"
         }],
         "iframe": "https://mhmarina.github.io/z-algorithm/"
+    },
+    "income-predictor": {
+        "header": "Icome Prediction",
+        "hero": [{
+            "src": "/details/income-predictor/parallel-coords.png",
+            "caption": "Parallel Coordinate Graph encoding hours-per-week, education-num, age, capital-gain, and capital-loss continuous features"
+        }],
+        "description": "This is the capstone project of my Data Visualization class as part of my MS CS at ASU. Here, I am a data analyst at a marketing agency XYZ. XYZ develops marketing profiles on people. The client is a college UVW. The given raw dataset contains 32561 rows of people, containing columns that reflect demographics such as age, workclass, education, marital status, occupation, and race, as well as whether or not they make under 50K a year. UVW is specifically targeting people making less than 50K, and we want to know what the specific demographics of this group are in order to better market toward them.",
+        "sections": [{
+            "sectionHeader": "Data Exploration",
+            "description": "The visualizations should help the marketing agency better understand UVW’s target demographic in order to make more informed and targeted marketing campaigns. These visualizations were created using python (matplotlib, plotly, pandas, and geopandas)",
+            "media": [{
+                "src": "/details/income-predictor/bar-chart.png",
+                "caption": "Bar chart of coefficients of Logistic Regression model"
+            },
+            {
+                "src": "/details/income-predictor/treemap.png",
+                "caption": " Using one hot encoding, we also get a weight for each specific category of categorical features, which we break down and represent as a Tree-map."
+            },
+            {
+                "src": "/details/income-predictor/sparklines.png",
+                "caption": "Sparklines depicting normal distributions for every continuous feature for every class label."
+            },
+            {
+                "src": "/details/income-predictor/map.png",
+                "caption": "Choropleth showing each native-country in the dataset."
+            }],
+        },
+        {
+            "sectionHeader": "Class Prediction",
+            "description": " Given a set of one or more variables, predict whether a person would make above or equal, or below 50K. The deliverable for this is an interactive Machine Learning (ML) prediction model. The goal is to train prediction models, and provide a command line interface for users to interact with either. The user should be able to provide as many or as little information as possible, and the models should be able to handle missing data via imputation. Furthermore, visualizations should give the users the ability to ”eyeball” or infer predicted class given a set of variables. For this project, I used scikit-learn (python) to train both a Naive Bayes and a Logistic Regression model, and provided a CLI for users to interact with and compare them. You can find the code and running instructions on the Github link provided!"
+        }],
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/income-prediction"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/income-prediction/blob/master/app/viz.ipynb",
+            "display": "Check out the jupyter notebook!"
+        }]
     }
 }
