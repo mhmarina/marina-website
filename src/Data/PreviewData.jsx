@@ -156,6 +156,7 @@ export const artPreviewData = [
     {
         id: "sdfc-marketing",
         headline: "SDFC Marketing & Graphic Design",
+        imgsrc: "/thumbnail/sdfc-marketing.png"
     },
     {
         id: "soda-marketing",

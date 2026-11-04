@@ -438,5 +438,21 @@ export const detailData = {
                 "caption": "Demo of the leaderboard function"
             }]
         }]
+    },
+    "sdfc-marketing": {
+        "header": "SDFC Marketing & Graphic Design",
+        "description": "During my freshman and sophomore years of college, I worked as a graphic designer at the Sun Devil Fitness Complex (SDFC)! I worked on various marketing campaigns, creating digital and physical assets including flyers, banners, social media graphics, and more, seen by hundreds of students daily!",
+        "hero": [{
+            "src": "/details/sdfc-marketing/flyers.png",
+            "caption": "I designed graphics for multiple events at the SDFC, specifically flyers, quarter sheets and social media graphics."
+        },
+        {
+            "src": "/details/sdfc-marketing/themed-schedules.png",
+            "caption": "I was solely responsible for creating themed graphics for group fitness schedules at the SDFC!"
+        },
+        {
+            "src": "/details/sdfc-marketing/sdfc-stickers.png",
+            "caption": "A few sticker designs featuring ASU's Sparky!"
+        }]
     }
 }
