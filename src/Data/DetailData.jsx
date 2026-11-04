@@ -32,7 +32,7 @@
 export const detailData = {
     "breathe": {
         "header": "Breathe",
-        "description": "Breathe is a 2D top down game where the player roleplays as a kupuna from Hawaiian mythology, whose goal is to vanquish the Mo’o monsters plaguing their home in Waipi’o valley. The game was created as part of Gameheads' Summer Accelerated Program (SAP) for 2024, and was showcased at 2025 Conference on BIPOC Game Studies at Strong Museum of Play, RIT EDGE, and Honolulu Museum.",
+        "description": "Breathe is a 2D top down game where the player roleplays as a kupuna from Hawaiian mythology, whose goal is to vanquish the Mo’o monsters plaguing their home in Waipi’o valley. The game was created as part of Gameheads' Summer Accelerated Program (SAP) for 2024, and was showcased at 2025 Conference on BIPOC Game Studies at the Strong Museum of Play, RIT EDGE, and Honolulu Museum.",
         "techStack": ["unity", "github", "C#"],
         "hero": [{
             "src": "/details/breathe/breathe-demo.gif",
@@ -41,7 +41,7 @@ export const detailData = {
         "links": [{
             "domain": "itch.io",
             "url": "https://gameheads.itch.io/breathe",
-            "display": "Play Breathe on itch!" //there should be default display based on domain
+            "display": "Play Breathe on itch!" 
         },
         {
             "domain": "github",
@@ -86,7 +86,7 @@ export const detailData = {
             "src": "/details/valkyrie/concept-art.png",
             "caption": "Visual Development for Valkyrie"
         }],
-        "description": "Valkyrie is a 2D platformer made in Gamemaker2. I solo developed this game includng GML scripting, UI design, illustrations, animations, level design as well as narrative design! This game has both a web build as well as a windows build.",
+        "description": "Valkyrie is a 2D platformer made in Gamemaker2. I solo developed this game including GML scripting, UI design, illustrations, animations, level design as well as narrative design! This game has both a WebGL build as well as a Windows build.",
         "links": [{
             "domain": "itch.io",
             "url": "https://mhmarina.itch.io/valkyrie",
@@ -95,7 +95,7 @@ export const detailData = {
     },
     "alder-mayo":{
         "header": "Alder Mayo",
-        "description": "In a partnership with Mayo Clinic, a team of Next Lab student workers are creating a virtual reality training simulation for medical students to practice diagnosing strokes. As a programmer on this project with NEXT Lab, I worked on desigining and implementing responsive, event driven systems, both XR and desktop controls, User Interface, Audio recognition, and more.",
+        "description": "In a partnership with Mayo Clinic, a team of Next Lab student workers created a virtual reality training simulation for medical students to practice diagnosing strokes. As a programmer on this project with NEXT Lab, I worked on desigining and implementing responsive, event driven systems, both XR and desktop controls, User Interface, Audio recognition, and more.",
         "links": [{
             "domain": "unity",
             "url": "https://alder-mayo-sept-8-2025.netlify.app/",
@@ -115,7 +115,7 @@ export const detailData = {
         }],
         "sections": [{
             "sectionHeader": "Features",
-            "description": "In a real stroke assessment, a provider would assess a patient based on visuals, such as droop eyes, sound, such as slurred speech, as well as interacting with them: such as their response to commands like raising their arm or reading simple words. We set out to build digital twins of stroke patients that students are The Mayo Clinic can train on in virtual reality. The experience would also be able to evaluate a student's assessments.",
+            "description": "In a real stroke assessment, a provider would assess a patient based on visuals -- such as droopy eyes -- sound, such as slurred speech, as well as interacting with them: such as their response to commands like raising their arm or reading simple words. We set out to build digital twins of stroke patients that students at The Mayo Clinic can train on in virtual reality. The experience would also be able to evaluate a student's assessments.",
             "media": [{
                 "src": "/details/alder-mayo/harold-armup.png",
                 "caption": "Harold responding to raising his arms up"
@@ -131,14 +131,14 @@ export const detailData = {
     },
     "zoom-spark":{
         "header": "Zoom Spark",
-        "description": "A platformer-puzzle game, that teaches players specifics about SDKs as well as concepts like modularity through hands-on building. Created for ASU's Zoom Spark Challenge. The game being a platformer requiring the player to search for the right objects mirrors the challenge of developing using SDKs and having to sift through documentation to find exactly what they're looking for. Finally, the developer puts it all together, developing new skills and acquiring new knowledge as they go.",
+        "description": "A platformer-puzzle game that teaches players specifics about SDKs as well as concepts like modularity through hands-on building. Created for ASU's Zoom Spark Challenge. The game being a platformer requiring the player to search for the right objects mirrors the challenge of developing using SDKs and having to sift through documentation to find exactly what they're looking for. Finally, the developer puts it all together, developing new skills and acquiring new knowledge as they go.",
         "hero": [{
             "src": "/details/zoom-spark/gameplay.png"
         }],
         "links": [{
             "domain": "youtube",
             "url": "https://www.youtube.com/watch?v=3HxsbCWPL24",
-            "display": "Checkout the playthrough"
+            "display": "Check out the playthrough"
         },
         {
             "domain": "itch.io",
@@ -155,7 +155,7 @@ export const detailData = {
     },
     "santa-slays":{
         "header": "Santa Slays",
-        "description": "Santa Slays is a christmas themed FPS where you play as santa trying to put gifts in his sleigh as he fights off evil snowmen. This was created as part of ABK 2023 Christmas Game jam and was also the first game I ever developed on Unity! I worked on UI integration, scene design (including post processing), audio integration as well as a few illustrations.",
+        "description": "Santa Slays is a christmas themed FPS where you play as santa trying to put gifts in his sleigh as he fights off evil snowmen. This was created as part of Activision Blizzard (ABK)'s 2023 Christmas Game Jam and was also the first game I ever developed on Unity! I worked on UI integration, scene design (including post processing), audio integration as well as a few illustrations.",
         "hero": [{
             "src": "/details/santa-slays/santa-slays.jpg"
         },
@@ -217,7 +217,7 @@ export const detailData = {
     },
     "dancing-dog":{
         "header": "WebGL Projects",
-        "description": "Projects from my intro to computer graphics class",
+        "description": "Projects from my intro to computer graphics class, 2025",
         "links": [{
             "domain": "link",
             "url": "https://mhmarina.github.io/WebGL/Dancer/Nasralla_figure.html",
@@ -241,7 +241,7 @@ export const detailData = {
     },
     "evolution": {
         "header": "Evolution",
-        "description": "Created for Gameheads with the theme, 'Evolution'. I wanted to incorporate the idea of breaking boundaries by having the player literally breaking down walls, bringing color to people's lives and then eventually destroying the 'box' that trapped everybody in. The player is able to inspire these people by constantly moving, while the rest remain stagnant. I also wanted to incorporate the idea of 'evolution causes epxansion' I tried doing this by having the player gain an extra move, and expand their screen view everytime they 'evolved' or broke down a wall. This game was created using Gamemaker2, using the framework created in my other project, Valkyrie.",
+        "description": "Created for Gameheads with the theme, 'Evolution'. I wanted to incorporate the idea of breaking boundaries by having the player literally breaking down walls, bringing color to people's lives and then eventually destroying the 'box' that trapped everybody in. The player is able to inspire these people by constantly moving, while the rest remain stagnant. I also wanted to incorporate the idea of 'evolution causes epxansion'. I tried doing this by having the player gain an extra move, and expand their screen view everytime they 'evolved' or broke down a wall. This game was created using Gamemaker2, using the framework created in my other project, Valkyrie.",
         "links": [{
             "domain": "itch.io",
             "display": "Play on itch!",
@@ -286,7 +286,7 @@ export const detailData = {
     },
     "monogame-game-engine": {
         "header": "Monogame Game Engine",
-        "description": "Built engine supporting lights, cameras, colliders, GUI, and GameObjects using Monogame and C#. Then I created a Pacman clone to validate functionality. The Pacman clone supports procedural level generation as well as A* search based enemy AI. This project was created throughout my Game Engine Development class.",
+        "description": "Built engine supporting lights, cameras, colliders, GUI, and GameObjects using Monogame and C#. Then I created a Pacman clone to test functionality. The Pacman clone supports procedural level generation as well as A* search based enemy AI. This project was created throughout my Game Engine Development class.",
         "hero": [{
             "src": "/thumbnail/monogame.png"
         }],
@@ -368,7 +368,7 @@ export const detailData = {
         "description": "This personal project is a DCGAN (Deep Convolutional Generative Adversarial Network) trained on a small dataset (<500 samples) of some of my portrait drawings. I was curious how the model would interpret my style!",
         "sections": [{
             "sectionHeader": "Data Collection",
-            "description": "Data collection was fun. I knew I wanted to train it on my drawings, but knew that I had to constrain myself to one style of drawing. I settled on a simple black and white square portrait, that I could easily whip out in a few minutes using Procreate for iPad. Because this was a manual process, the dataset was extremely limited. The images have been preprocessed to be 16x16 and in grayscale, and augmented to include horizontal flips (to maintain the context of the image).",
+            "description": "Data collection was fun. I knew I wanted to train it on my drawings, but knew that I had to constrain myself to one style of drawing. I settled on a simple black and white square portrait, that I could easily whip out in a few minutes using Procreate on my iPad. Because this was a manual process, the dataset was extremely limited. The images have been preprocessed to be 16x16 and in grayscale, and augmented to include horizontal flips (to maintain the context of the image).",
             "media": [{
                 "src": "/details/marina-gan/training-imgs.png",
                 "caption": "A subset of training images"
@@ -409,7 +409,7 @@ export const detailData = {
         },
         {
             "src": "/details/animations/waterbending.GIF",
-            "caption": "ATLA inspired waterbending! Created in Procreate."
+            "caption": "Avatar the Last Airbender inspired waterbending! Created in Procreate."
         }]
     },
     "discord-trivia-bot": {
@@ -420,7 +420,7 @@ export const detailData = {
         }],
         "hero": [{
             "src": "/details/discord-trivia-bot/er-diagrams.jpg",
-            "caption": "ER draft vs final design"
+            "caption": "ER diagram draft vs final design"
         }],
         "sections": [{
             "sectionHeader": "Database Design",

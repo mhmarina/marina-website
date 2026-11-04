@@ -73,7 +73,7 @@ export const graphicsPreviewData = [
     },
     {
         id: "minecraft-dataviz",
-        headline: "Minecrafta Data Viz Platform",
+        headline: "Minecraft Data Viz Platform",
         summary: "Server uptime & historical data",
         imgsrc: "/thumbnail/mc-dataviz.png"
     },
@@ -108,7 +108,7 @@ export const mlPreviewData = [
     {
         id: "income-predictor",
         headline: "Income Predictor",
-        summary: "Use traditional ML to predict income",
+        summary: "Use traditional ML to predict income & explore visualizations",
         imgsrc: "/details/income-predictor/parallel-coords.png"
     },
     {
