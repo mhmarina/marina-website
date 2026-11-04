@@ -161,7 +161,13 @@ export const artPreviewData = [
     },
     {
         id: "witc",
-        headline: "ASU's First Women in Technology Marketing Campaign",
+        headline: "Ada Lovelace Summit Marketing Campaign",
         imgsrc: "/thumbnail/witc.png"
+    },
+    {
+        id: "animations",
+        headline: "Animation",
+        imgsrc: "/thumbnail/animation.png",
+        summary: "My animation experiments!"
     }
 ]

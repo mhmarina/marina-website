@@ -395,5 +395,21 @@ export const detailData = {
             "src": "/details/marina-gan/training-marina-gan.gif",
             "caption": "Generations over training epochs"
         }]
+    },
+    "animations": {
+        "header": "Animations",
+        "description": "My animation experiments!",
+        "hero": [{
+            "src": "/details/animations/kirby.GIF",
+            "caption": "kirby jump cycle! Created in Procreate."
+        },
+        {
+            "src": "/details/animations/pinky-pie.GIF",
+            "caption": "Pinkie Pie stuffing her face with a cupcake. Created in Procreate."
+        },
+        {
+            "src": "/details/animations/waterbending.GIF",
+            "caption": "ATLA inspired waterbending! Created in Procreate."
+        }]
     }
 }
