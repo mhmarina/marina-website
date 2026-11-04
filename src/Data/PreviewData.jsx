@@ -160,7 +160,7 @@ export const artPreviewData = [
     },
     {
         id: "soda-marketing",
-        headline: "SoDA Rebrand",
+        headline: "SoDA Marketing",
     },
     {
         id: "witc",
