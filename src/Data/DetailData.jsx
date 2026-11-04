@@ -86,7 +86,7 @@ export const detailData = {
             "src": "/details/valkyrie/concept-art.png",
             "caption": "Visual Development for Valkyrie"
         }],
-        "description": "Valkrie is a 2D platformer made in Gamemaker2. I solo developed this game includng GML scripting, UI design, illustrations, animations, level design as well as narrative design! This game has both a web build as well as a windows build.",
+        "description": "Valkyrie is a 2D platformer made in Gamemaker2. I solo developed this game includng GML scripting, UI design, illustrations, animations, level design as well as narrative design! This game has both a web build as well as a windows build.",
         "links": [{
             "domain": "itch.io",
             "url": "https://mhmarina.itch.io/valkyrie",
@@ -246,6 +246,10 @@ export const detailData = {
             "domain": "itch.io",
             "display": "Play on itch!",
             "url": "https://mhmarina.itch.io/evolution"
+        },
+        {
+            "domain": "github",
+            "url": "https://github.com/mhmarina/gameheads-evolution"
         }],
         "hero": [{"src": "/thumbnail/evolution.png"}]
     },
@@ -357,6 +361,39 @@ export const detailData = {
             "domain": "github",
             "url": "https://github.com/mhmarina/income-prediction/blob/master/app/viz.ipynb",
             "display": "Check out the jupyter notebook!"
+        }]
+    },
+    "marinagan": {
+        "header": "MarinaGAN",
+        "description": "This personal project is a DCGAN (Deep Convolutional Generative Adversarial Network) trained on a small dataset (<500 samples) of some of my portrait drawings. I was curious how the model would interpret my style!",
+        "sections": [{
+            "sectionHeader": "Data Collection",
+            "description": "Data collection was fun. I knew I wanted to train it on my drawings, but knew that I had to constrain myself to one style of drawing. I settled on a simple black and white square portrait, that I could easily whip out in a few minutes using Procreate for iPad. Because this was a manual process, the dataset was extremely limited. The images have been preprocessed to be 16x16 and in grayscale, and augmented to include horizontal flips (to maintain the context of the image).",
+            "media": [{
+                "src": "/details/marina-gan/training-imgs.png",
+                "caption": "A subset of training images"
+            },
+            {
+                "src": "/details/marina-gan/doodle.jpg",
+                "caption": "An example doodle"
+            }]
+        },
+        {
+            "sectionHeader": "Training",
+            "description": "To help the training, I used a small training rate, an even smaller training rate for the discriminator, trained the discriminator slower that the generator, and used label smoothing. This was all done to make the discriminator's job a little harder as it had an advantage given the small dataset. For training, I used pytorch as well as Google colab on VSCode. The result is a weird looking thing that sort of resembles a person in my style!"
+        }],
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/marinaGAN"
+        },
+        {
+            "domain": "huggingface",
+            "url": "https://huggingface.co/spaces/mhmarina/marinaGAN",
+            "display": "Try the generator!"
+        }],
+        "hero": [{
+            "src": "/details/marina-gan/training-marina-gan.gif",
+            "caption": "Generations over training epochs"
         }]
     }
 }

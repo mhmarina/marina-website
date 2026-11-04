@@ -102,7 +102,8 @@ export const mlPreviewData = [
     {
         id: "marinagan",
         headline: "MarinaGAN",
-        summary: "Deep Convolutional Generational-Adversarial Network (DCGAN) trained on my digital doodles"
+        summary: "Deep Convolutional Generational-Adversarial Network (DCGAN) trained on my digital doodles",
+        imgsrc: "/thumbnail/marina-gan.png"
     },
     {
         id: "income-predictor",
