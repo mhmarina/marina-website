@@ -411,5 +411,32 @@ export const detailData = {
             "src": "/details/animations/waterbending.GIF",
             "caption": "ATLA inspired waterbending! Created in Procreate."
         }]
+    },
+    "discord-trivia-bot": {
+        "header": "Discord Trivia Bot",
+        "links": [{
+            "domain": "github",
+            "url": "https://github.com/mhmarina/Discord-Trivia-Bot"
+        }],
+        "hero": [{
+            "src": "/details/discord-trivia-bot/er-diagrams.jpg",
+            "caption": "ER draft vs final design"
+        }],
+        "sections": [{
+            "sectionHeader": "Database Design",
+            "description": "For this project we chose to create an implementation of a trivia game that uses a PostgreSQL database to store all of the pertinent information. There are four tables in our database: Users, Categories, Questions, and Sessions.",
+        },
+        {
+            "sectionHeader": "Implementation Details",
+            "description": "This bot is written using python. It uses Asyncpg, which is an asynchronous PostgreSQL client library for Python, as well as Discord's API wrapper Discord.py.",
+            "media": [{
+                "src": "/details/discord-trivia-bot/interact.jpg",
+                "caption": "The bot in action"
+            },
+            {
+                "src": "/details/discord-trivia-bot/leaderboard.jpg",
+                "caption": "Demo of the leaderboard function"
+            }]
+        }]
     }
 }

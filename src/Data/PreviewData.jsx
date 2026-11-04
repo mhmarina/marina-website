@@ -138,6 +138,8 @@ export const  appDevPreviewData = [
     {
         id: "discord-trivia-bot",
         headline: "Discord Trivia Bot",
+        summary: "Invite this bot to your channel and play trivia!",
+        imgsrc: "/thumbnail/discord-bot.jpg"
     },
     {
         id: "blockchain-coc",
