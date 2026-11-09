@@ -43,10 +43,11 @@
 
 
 .section-hero{
-    min-height: calc(100vh - 30px);      
+    min-height: 100vh;      
     display: flex;
     align-items: center;    
     justify-content: center;
+    flex-direction: column;
 }
 
 .profile-container{
@@ -57,6 +58,7 @@
     width: min(90%, 700px);
     align-self: center;
     background-color: pink;
+    margin-bottom: 70px;
 
     @media screen and (min-width: 441px){
         .profile-name{
