@@ -5,7 +5,7 @@ export function FeatureLink({item}){
         <NavLink to={`projects/${item.id}`}>
             <div className="feature-img-wrapper">
                 <img
-                    src={item.imgsrc}
+                    src={`/marina-website${item.imgsrc}`}
                 />
             </div>
             <div className="feature-headline">

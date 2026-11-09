@@ -41,15 +41,14 @@
     flex-direction: column;
 }
 
-/*
+
 .section-hero{
-    min-height: 100vh;      
-    min-height: 100svh;     
+    min-height: calc(100vh - 30px);      
     display: flex;
     align-items: center;    
     justify-content: center;
 }
-*/
+
 .profile-container{
     padding: 10px;
     display: flex;
@@ -57,6 +56,7 @@
     flex-direction: column;
     width: min(90%, 700px);
     align-self: center;
+    background-color: pink;
 
     @media screen and (min-width: 441px){
         .profile-name{
@@ -94,6 +94,7 @@
                 height: inherit;
                 width: inherit;
                 object-fit: cover;
+                background-color: white;
             }
         }
         .feature-headline{
