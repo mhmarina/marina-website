@@ -94,7 +94,7 @@ export function Divider({ variant = "stars", label, color = "black", spacing = 3
             return (
                 <div style={{ ...wrap, display: "flex", alignItems: "center", gap: "16px" }}>
                     <div style={line} />
-                    <span className="section-header" style={{ fontSize: "20px" }}>{label}</span>
+                    <span className="section-header" style={{ fontSize: "20px" }}>✦ {label} ✦</span>
                     <div style={line} />
                 </div>
             );
