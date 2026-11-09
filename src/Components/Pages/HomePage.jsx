@@ -8,7 +8,9 @@ export default function HomePage(){
     return(
         <div id="Home" className="top-container">
             <div className="inner-container">
-                <ProfileContainer/>
+                {/* <div className="section-hero"> */}
+                    <ProfileContainer/>
+                {/* </div> */}
                 <Divider variant="label" label="Projects"/>
                 <div id="games"><CategoryBar header="Games" data={gamesPreviewData}></CategoryBar></div>
                 <div id="graphics"><CategoryBar header="Computer Graphics & DataViz" data={graphicsPreviewData}></CategoryBar></div>

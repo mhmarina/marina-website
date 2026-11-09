@@ -3,6 +3,7 @@ import { useId } from "react";
 export function Divider({ variant = "stars", label, color = "black", spacing = 30 }) {
     const id = useId();
     const wrap = { margin: `${spacing}px 0`, color };
+    const line = { flex: 1, borderTop: "3px dotted currentColor" };
 
     switch (variant) {
         // chunky dashes
@@ -39,13 +40,14 @@ export function Divider({ variant = "stars", label, color = "black", spacing = 3
                 </div>
             );
 
+
         // lines on each side with a sparkle cluster in the middle
         case "sparkle":
             return (
                 <div aria-hidden="true" style={{ ...wrap, display: "flex", alignItems: "center", gap: "16px" }}>
-                    <div style={{ flex: 1, borderTop: "3px dotted currentColor" }} />
+                    <div style={line}/>
                     <span style={{ fontSize: "22px", letterSpacing: "0.3em", lineHeight: 1 }}>✦ ★ ✦</span>
-                    <div style={{ flex: 1, borderTop: "3px dotted currentColor" }} />
+                    <div style={line} />
                 </div>
             );
 
@@ -89,7 +91,6 @@ export function Divider({ variant = "stars", label, color = "black", spacing = 3
 
         // dashed line with a title
         case "label": {
-            const line = { flex: 1, height: 0, borderTop: "3px dashed currentColor" };
             return (
                 <div style={{ ...wrap, display: "flex", alignItems: "center", gap: "16px" }}>
                     <div style={line} />
