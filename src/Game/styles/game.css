@@ -6,6 +6,7 @@
     display: grid;
     /* place-items: center; */
     font-family: Minecraft;
+    align-self: center
 }
 #headline{
     * {

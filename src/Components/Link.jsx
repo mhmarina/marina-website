@@ -1,9 +1,9 @@
 import { faDevpost, faGithub, faHuggingFace, faItchIo, faLinkedin, faReadme, faUnity, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faCartShopping, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faPaintBrush, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-export function Link({domain, url, display}){
+export function Link({domain, url, display, iconOnly}){
     const nameToSvg = {
         "github": faGithub,
         "youtube": faYoutube,
@@ -14,15 +14,20 @@ export function Link({domain, url, display}){
         "readme": faReadme,
         "devpost": faDevpost,
         "link": faUpRightFromSquare,
-        "huggingface": faHuggingFace
+        "huggingface": faHuggingFace,
+        "art": faPaintBrush
     }
     
     return(
-        <div className="link-bar">
-            <FontAwesomeIcon icon={domain && nameToSvg[domain]}/>
-            <a href={url}>
-                {display ? display : domain}
-            </a>
-        </div>
+        <a href={url}>
+            <div className="link-bar">
+                <FontAwesomeIcon icon={domain ? nameToSvg[domain] : nameToSvg["link"]}/>
+                {!iconOnly && 
+                <>
+                    {display ? display : domain}
+                </>
+                }
+            </div>
+        </a>
     )
 }

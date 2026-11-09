@@ -5,7 +5,6 @@ export function IFrame({src}){
                 src={src}
                 allow="autoplay"
                 loading="lazy"
-                scrolling="no"
                 >
             </iframe>
         </div>
