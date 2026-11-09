@@ -35,7 +35,8 @@ export function Navbar() {
                     style={{
                         border: "2px solid black",
                         backgroundColor: `${id === clickedItem ? "black" : "pink"}`,
-                        color: `${id === clickedItem ? "pink" : "black"}`
+                        color: `${id === clickedItem ? "pink" : "black"}`,
+                        cursor: "pointer"
                     }}
                     >
                     {label}
