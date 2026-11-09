@@ -13,12 +13,16 @@ export default function HomePage(){
             <Navbar/>
             <div id="Home" className="top-container">
                 <div className="inner-container">
-                    <div className="section-hero">
+                    <div className="section-hero" id="home-hero">
                         <ProfileContainer/>
+                        <div>
                         <FontAwesomeIcon 
                             icon={faAngleDoubleDown}
-                            className="fa-bounce fa-xl"
+                            className="fa-bounce fa-2xl"
+                            style={{cursor: "pointer"}}
+                            onClick={() => document.getElementById("games")?.scrollIntoView({ behavior: "smooth" })}
                         />
+                        </div>
                     </div>
                     <Divider variant="label" label="Projects"/>
                     <div id="games"><CategoryBar header="Games" data={gamesPreviewData}></CategoryBar></div>
@@ -30,8 +34,9 @@ export default function HomePage(){
                     <Game/>
                     <FontAwesomeIcon 
                         icon={faAngleDoubleUp}
-                        className="fa-bounce fa-xl"
-                        style={{alignSelf: "center", marginTop: "50px"}}
+                        className="fa-bounce fa-2xl"
+                        style={{alignSelf: "center", marginTop: "50px", cursor: "pointer"}}
+                        onClick={() => document.getElementById("home-hero")?.scrollIntoView({ behavior: "smooth" })}
                     />
                 </div>
             </div>
