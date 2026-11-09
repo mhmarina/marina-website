@@ -40,3 +40,55 @@
     gap: 50px;
     flex-direction: column;
 }
+
+.profile-container{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: min(90%, 700px);
+    align-self: center;
+
+    @media screen and (min-width: 441px){
+        .profile-name{
+            font-family: Lucidity-Expand;;
+            font-size: 48px;
+            line-height: 45px;
+        }
+        .section-header{
+            font-size: 24px;
+        }
+    }
+    @media screen and (max-width: 440px){
+        .profile-name{
+            font-family: Lucidity-Expand;;
+            font-size: 28px;
+            line-height: 25px;
+        }
+        .section-header{
+            font-size: 18px;
+        }
+    }
+    .link-container{
+        display: flex;
+    }
+    .featured-img-container{
+        display: grid;
+        gap: 10px 20px;
+        grid-template-columns: repeat(auto-fill, 100px);
+        .feature-img-wrapper{
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            font-size: 9px;
+            img{
+                height: inherit;
+                width: inherit;
+                object-fit: cover;
+            }
+        }
+        .feature-headline{
+            font-size: 12px;
+        }
+    }
+}
