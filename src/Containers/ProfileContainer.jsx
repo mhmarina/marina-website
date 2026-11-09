@@ -17,7 +17,7 @@ export function ProfileContainer(){
                 <Link iconOnly domain="github" url="https://github.com/mhmarina"/>
             </div>
             <div className="summary">
-                this is my description! All about me me me me!
+                Hi, my name is Marina! I have a BS and a MS in CS from ASU! I am passionated about art and technology. I've worked as a professional Software Engineer at The Home Depot, Wells Fargo, ASU Enterprise Technology, and Smartsheet! Check out my projects across several domains, including art, VR, gaming, graphics, data and ML.
             </div>
             <div className="section-header">
                 FEATURED
