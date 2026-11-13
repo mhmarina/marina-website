@@ -323,7 +323,7 @@ export const detailData = {
         "iframe": "https://mhmarina.github.io/z-algorithm/"
     },
     "income-predictor": {
-        "header": "Icome Prediction",
+        "header": "Income Prediction",
         "hero": [{
             "src": "/details/income-predictor/parallel-coords.png",
             "caption": "Parallel Coordinate Graph encoding hours-per-week, education-num, age, capital-gain, and capital-loss continuous features"
@@ -453,6 +453,27 @@ export const detailData = {
         {
             "src": "/details/sdfc-marketing/sdfc-stickers.png",
             "caption": "A few sticker designs featuring ASU's Sparky!"
+        }]
+    },
+    "witc": {
+        "header": "Ada Lovelace Summit",
+        "description": "The Ada Lovelace Summit is Arizona State Univeristy's first Women in Technology conference, an initiative by The Software Developers Association (SoDA) and Women in Computer Science (WiTC) at ASU. As marketing officer, I was responsible for the marketing and the branding of the conference, including graphic design for social media and t-shirt designs. This initiative was personally important to me and I am produ to be a part of it.",
+        "hero": [{
+            "src": "/details/witc/7.png"
+        },
+        {
+            "src": "/details/witc/8.png"
+        },
+        {
+            "src": "/details/witc/9.png"
+        },
+        {
+            "src": "/details/witc/10.png",
+            "caption": "Social Media Graphics for Carasoul Post"
+        },
+        {
+            "src": "/details/witc/tshirt.png",
+            "caption": "T-shirt design for WiTC!"
         }]
     }
 }
