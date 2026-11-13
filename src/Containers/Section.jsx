@@ -8,6 +8,7 @@ export function Section({media, sectionHeader, description}){
             <div className="media-container">
                 {media && media.map((m,i) => 
                     <Media
+                    contain={m["contain"]}
                     key={i}
                     src={m["src"]}
                     caption={m["caption"]}

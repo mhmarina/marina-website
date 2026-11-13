@@ -161,6 +161,7 @@ export const artPreviewData = [
     {
         id: "soda-marketing",
         headline: "SoDA Marketing",
+        imgsrc: "/thumbnail/soda.png"
     },
     {
         id: "witc",

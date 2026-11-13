@@ -371,11 +371,13 @@ export const detailData = {
             "description": "Data collection was fun. I knew I wanted to train it on my drawings, but knew that I had to constrain myself to one style of drawing. I settled on a simple black and white square portrait, that I could easily whip out in a few minutes using Procreate for iPad. Because this was a manual process, the dataset was extremely limited. The images have been preprocessed to be 16x16 and in grayscale, and augmented to include horizontal flips (to maintain the context of the image).",
             "media": [{
                 "src": "/details/marina-gan/training-imgs.png",
-                "caption": "A subset of training images"
+                "caption": "A subset of training images",
+                "contain": true
             },
             {
                 "src": "/details/marina-gan/doodle.jpg",
-                "caption": "An example doodle"
+                "caption": "An example doodle",
+                "contain": true
             }]
         },
         {
@@ -475,5 +477,91 @@ export const detailData = {
             "src": "/details/witc/tshirt.png",
             "caption": "T-shirt design for WiTC!"
         }]
-    }
+    },
+    "soda-marketing": {
+        "header": "SoDA Marketing",
+        "description": "During my Senior year and my Masters, I served as a marketing officer and lead graphic designer for the Software Developers Association. I was responsible for a complete revamp of their brand, as well as marketing graphics for all key and weekly events, and merch.",
+        "sections": [{
+            "sectionHeader": "Revamp",
+            "description": "My first task as marketing officer was a complete rebrand of SoDA at ASU. This involved redesiging the logo and redefining their brand, which included color palettes, fonts, graphics and cute mascots :)",
+            "media": [{
+                "src": "/details/soda/revamp/logo.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/revamp/lounge-hours.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/revamp/ab.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/revamp/skill-sessions.png",
+                "contain": true
+            },
+        ]},
+        {
+           "sectionHeader": "CCXI",
+           "description": "Social Media marketing and T-shirt design for SoDA's 11th Annual Code Challenge",
+           "media": [{
+                "src": "/details/soda/ccxi/ig.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/ccxi/prizes.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/ccxi/banner.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/ccxi/tshirt.png",
+                "contain": true
+            },
+        ]},
+        {
+            "sectionHeader": "HackSoDA 24",
+            "description": "I illustrated and designed this social media graphic for Hack SoDA 2024, SoDA's biggest hackathon of the year!",
+            "media": [{
+                "src": "/details/soda/hacksoda/hackSoDA.png",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/hacksoda/in-the-wild.JPG",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/hacksoda/pic.JPG",
+                "contain": true
+            },
+        ]},
+        {
+            "sectionHeader": "Misc Merch",
+            "media": [{
+                "src": "/details/soda/merch/stole.png",
+                "contain": true,
+                "caption": "Stole designs for SoDA grads"
+            },
+            {
+                "src": "/details/soda/merch/officer-tshirts.png",
+                "contain": true,
+                "caption": "Officer T-shirts"
+            },  
+            {
+                "src": "/details/soda/merch/sticker-sheet.PNG",
+                "contain": true,
+                "caption": "custom sticker sheet"
+            }, 
+            {
+                "src": "/details/soda/merch/sticker-out.JPG",
+                "contain": true
+            },
+            {
+                "src": "/details/soda/merch/sticker-out2.JPG",
+                "contain": true
+            },
+        ]}
+    ]}
 }
