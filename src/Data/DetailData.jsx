@@ -200,6 +200,9 @@ export const detailData = {
             },
             {
                 "src": "/details/plastic-seas/pic2.jpg"
+            },
+            {
+                "src": "/details/plastic-seas/reality-hack.jpg"
             }]
         }],
         "links": [{
@@ -455,6 +458,21 @@ export const detailData = {
         {
             "src": "/details/sdfc-marketing/sdfc-stickers.png",
             "caption": "A few sticker designs featuring ASU's Sparky!"
+        }],
+        "sections": [{
+            "sectionHeader": "Women Only Training Hours",
+            "media": [{
+                "src": "/details/sdfc-marketing/WO1.png",
+                "contain": true
+            },
+            {
+                "src": "/details/sdfc-marketing/WO2.png",
+                "contain": true
+            },
+            {
+                "src": "/details/sdfc-marketing/WO-itw.jpg",
+                "contain": true
+            }]
         }]
     },
     "witc": {
@@ -500,6 +518,20 @@ export const detailData = {
                 "src": "/details/soda/revamp/skill-sessions.png",
                 "contain": true
             },
+            {
+                "src": "/details/soda/revamp/banner.jpeg",
+                "contain": true,
+                "caption": "Me posing with my banner!"
+            },
+            {
+                "src": "/details/soda/revamp/mentorship.jpeg",
+                "caption": "Graphics for our Mentorship Program"
+            },
+            ,
+            {
+                "src": "/details/soda/revamp/service-award.JPG",
+                "caption": "I was given the Outstanding Service award for my contributions"
+            }
         ]},
         {
            "sectionHeader": "CCXI",
@@ -520,6 +552,9 @@ export const detailData = {
                 "src": "/details/soda/ccxi/tshirt.png",
                 "contain": true
             },
+            {
+                "src": "/details/soda/ccxi/ccxi-merch.png",
+            },
         ]},
         {
             "sectionHeader": "HackSoDA 24",
@@ -538,11 +573,14 @@ export const detailData = {
             },
         ]},
         {
-            "sectionHeader": "Misc Merch",
+            "sectionHeader": "Merch Design",
             "media": [{
                 "src": "/details/soda/merch/stole.png",
                 "contain": true,
                 "caption": "Stole designs for SoDA grads"
+            },
+            {
+                "src": "/details/soda/merch/stole-model.jpeg",
             },
             {
                 "src": "/details/soda/merch/officer-tshirts.png",
@@ -556,10 +594,12 @@ export const detailData = {
             }, 
             {
                 "src": "/details/soda/merch/sticker-out.JPG",
-                "contain": true
             },
             {
                 "src": "/details/soda/merch/sticker-out2.JPG",
+            },
+              {
+                "src": "/details/soda/merch/sticker-out3.jpeg",
                 "contain": true
             },
         ]}
